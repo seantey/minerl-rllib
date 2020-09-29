@@ -1,0 +1,2865 @@
+ansible-playbook 2.8.0
+  config file = None
+  configured module search path = ['/home/shyam/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /home/shyam/anaconda3/envs/rayflow/lib/python3.7/site-packages/ansible
+  executable location = /home/shyam/anaconda3/envs/rayflow/bin/ansible-playbook
+  python version = 3.7.0 (default, Oct  9 2018, 10:31:47) [GCC 7.3.0]
+No config file found; using defaults
+host_list declined parsing /tmp/tmp6cafoq2_.yml as it did not pass it's verify_file() method
+script declined parsing /tmp/tmp6cafoq2_.yml as it did not pass it's verify_file() method
+Parsed /tmp/tmp6cafoq2_.yml inventory source with yaml plugin
+
+PLAYBOOK: tmpdwo5xh6s.yml ******************************************************
+1 plays in /tmp/tmpdwo5xh6s.yml
+
+PLAY [Set up master hosts] *****************************************************
+
+TASK [Gathering Facts] *********************************************************
+task path: /tmp/tmpdwo5xh6s.yml:1
+<192.168.1.65> ESTABLISH LOCAL CONNECTION FOR USER: shyam
+<192.168.1.65> EXEC /bin/sh -c 'echo ~shyam && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/shyam/.ansible/tmp/ansible-tmp-1601338614.433881-204582543873210 `" && echo ansible-tmp-1601338614.433881-204582543873210="` echo /home/shyam/.ansible/tmp/ansible-tmp-1601338614.433881-204582543873210 `" ) && sleep 0'
+Using module file /home/shyam/anaconda3/envs/rayflow/lib/python3.7/site-packages/ansible/modules/system/setup.py
+<192.168.1.65> PUT /home/shyam/.ansible/tmp/ansible-local-73585f512who2/tmpcg9c2k19 TO /home/shyam/.ansible/tmp/ansible-tmp-1601338614.433881-204582543873210/AnsiballZ_setup.py
+<192.168.1.65> EXEC /bin/sh -c 'chmod u+x /home/shyam/.ansible/tmp/ansible-tmp-1601338614.433881-204582543873210/ /home/shyam/.ansible/tmp/ansible-tmp-1601338614.433881-204582543873210/AnsiballZ_setup.py && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '~/anaconda3/envs/py37/bin/python /home/shyam/.ansible/tmp/ansible-tmp-1601338614.433881-204582543873210/AnsiballZ_setup.py && sleep 0'
+ok: [192.168.1.65] => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "172.18.0.1",
+            "192.168.1.65",
+            "172.17.0.1"
+        ],
+        "ansible_all_ipv6_addresses": [
+            "fe80::55fe:1e93:eee8:d489",
+            "fe80::42:eeff:fed6:81be"
+        ],
+        "ansible_apparmor": {
+            "status": "enabled"
+        },
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "11/14/2018",
+        "ansible_bios_version": "1.C0",
+        "ansible_br_490206f57378": {
+            "active": false,
+            "device": "br-490206f57378",
+            "id": "8000.02426df211db",
+            "interfaces": [],
+            "ipv4": {
+                "address": "172.18.0.1",
+                "broadcast": "172.18.255.255",
+                "netmask": "255.255.0.0",
+                "network": "172.18.0.0"
+            },
+            "macaddress": "02:42:6d:f2:11:db",
+            "mtu": 1500,
+            "promisc": false,
+            "stp": false,
+            "type": "bridge"
+        },
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-5.3.0-42-generic",
+            "quiet": true,
+            "ro": true,
+            "root": "UUID=f11d3641-4e9e-4200-8952-363ae699f875",
+            "splash": true,
+            "vt.handoff": "1"
+        },
+        "ansible_date_time": {
+            "date": "2020-09-28",
+            "day": "28",
+            "epoch": "1601338614",
+            "hour": "17",
+            "iso8601": "2020-09-29T00:16:54Z",
+            "iso8601_basic": "20200928T171654971753",
+            "iso8601_basic_short": "20200928T171654",
+            "iso8601_micro": "2020-09-29T00:16:54.971854Z",
+            "minute": "16",
+            "month": "09",
+            "second": "54",
+            "time": "17:16:54",
+            "tz": "PDT",
+            "tz_offset": "-0700",
+            "weekday": "Monday",
+            "weekday_number": "1",
+            "weeknumber": "39",
+            "year": "2020"
+        },
+        "ansible_default_ipv4": {
+            "address": "192.168.1.65",
+            "alias": "enx000f0051fe38",
+            "broadcast": "192.168.1.255",
+            "gateway": "192.168.1.254",
+            "interface": "enx000f0051fe38",
+            "macaddress": "00:0f:00:51:fe:38",
+            "mtu": 1500,
+            "netmask": "255.255.255.0",
+            "network": "192.168.1.0",
+            "type": "ether"
+        },
+        "ansible_default_ipv6": {},
+        "ansible_device_links": {
+            "ids": {
+                "nvme0n1": [
+                    "nvme-Samsung_SSD_970_EVO_1TB_S467NX0M712523B",
+                    "nvme-eui.0025385791b241d3"
+                ],
+                "nvme0n1p1": [
+                    "nvme-Samsung_SSD_970_EVO_1TB_S467NX0M712523B-part1",
+                    "nvme-eui.0025385791b241d3-part1"
+                ],
+                "nvme0n1p2": [
+                    "nvme-Samsung_SSD_970_EVO_1TB_S467NX0M712523B-part2",
+                    "nvme-eui.0025385791b241d3-part2"
+                ]
+            },
+            "labels": {},
+            "masters": {},
+            "uuids": {
+                "nvme0n1p1": [
+                    "31C1-DB9E"
+                ],
+                "nvme0n1p2": [
+                    "f11d3641-4e9e-4200-8952-363ae699f875"
+                ]
+            }
+        },
+        "ansible_devices": {
+            "loop0": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "552",
+                "sectorsize": "512",
+                "size": "276.00 KB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop1": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "257768",
+                "sectorsize": "512",
+                "size": "125.86 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop10": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "1912",
+                "sectorsize": "512",
+                "size": "956.00 KB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop11": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "120576",
+                "sectorsize": "512",
+                "size": "58.88 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop12": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "1912",
+                "sectorsize": "512",
+                "size": "956.00 KB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop13": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "5080",
+                "sectorsize": "512",
+                "size": "2.48 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop14": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "112264",
+                "sectorsize": "512",
+                "size": "54.82 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop15": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "4992",
+                "sectorsize": "512",
+                "size": "2.44 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop16": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "24176",
+                "sectorsize": "512",
+                "size": "11.80 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop17": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "523400",
+                "sectorsize": "512",
+                "size": "255.57 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop18": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "24176",
+                "sectorsize": "512",
+                "size": "11.80 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop19": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "552",
+                "sectorsize": "512",
+                "size": "276.00 KB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop2": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "335192",
+                "sectorsize": "512",
+                "size": "163.67 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop20": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "197888",
+                "sectorsize": "512",
+                "size": "96.62 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop21": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "112552",
+                "sectorsize": "512",
+                "size": "54.96 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop22": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "523400",
+                "sectorsize": "512",
+                "size": "255.57 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop23": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "198784",
+                "sectorsize": "512",
+                "size": "97.06 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop24": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "346736",
+                "sectorsize": "512",
+                "size": "169.30 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop25": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "0",
+                "sectorsize": "512",
+                "size": "0.00 Bytes",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop3": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "127160",
+                "sectorsize": "512",
+                "size": "62.09 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop4": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "257736",
+                "sectorsize": "512",
+                "size": "125.85 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop5": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "4440",
+                "sectorsize": "512",
+                "size": "2.17 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop6": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "327992",
+                "sectorsize": "512",
+                "size": "160.15 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop7": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "330576",
+                "sectorsize": "512",
+                "size": "161.41 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop8": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "4440",
+                "sectorsize": "512",
+                "size": "2.17 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "loop9": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "113296",
+                "sectorsize": "512",
+                "size": "55.32 MB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            },
+            "nvme0n1": {
+                "holders": [],
+                "host": "Non-Volatile memory controller: Samsung Electronics Co Ltd NVMe SSD Controller SM981/PM981",
+                "links": {
+                    "ids": [
+                        "nvme-Samsung_SSD_970_EVO_1TB_S467NX0M712523B",
+                        "nvme-eui.0025385791b241d3"
+                    ],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": "Samsung SSD 970 EVO 1TB",
+                "partitions": {
+                    "nvme0n1p1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [
+                                "nvme-Samsung_SSD_970_EVO_1TB_S467NX0M712523B-part1",
+                                "nvme-eui.0025385791b241d3-part1"
+                            ],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "31C1-DB9E"
+                            ]
+                        },
+                        "sectors": "1048576",
+                        "sectorsize": 512,
+                        "size": "512.00 MB",
+                        "start": "2048",
+                        "uuid": "31C1-DB9E"
+                    },
+                    "nvme0n1p2": {
+                        "holders": [],
+                        "links": {
+                            "ids": [
+                                "nvme-Samsung_SSD_970_EVO_1TB_S467NX0M712523B-part2",
+                                "nvme-eui.0025385791b241d3-part2"
+                            ],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "f11d3641-4e9e-4200-8952-363ae699f875"
+                            ]
+                        },
+                        "sectors": "1952473088",
+                        "sectorsize": 512,
+                        "size": "931.01 GB",
+                        "start": "1050624",
+                        "uuid": "f11d3641-4e9e-4200-8952-363ae699f875"
+                    }
+                },
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "none",
+                "sectors": "1953525168",
+                "sectorsize": "512",
+                "size": "931.51 GB",
+                "support_discard": "512",
+                "vendor": null,
+                "virtual": 1
+            }
+        },
+        "ansible_distribution": "Ubuntu",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/os-release",
+        "ansible_distribution_file_variety": "Debian",
+        "ansible_distribution_major_version": "18",
+        "ansible_distribution_release": "bionic",
+        "ansible_distribution_version": "18.04",
+        "ansible_dns": {
+            "nameservers": [
+                "8.8.8.8",
+                "8.8.4.4"
+            ]
+        },
+        "ansible_docker0": {
+            "active": false,
+            "device": "docker0",
+            "id": "8000.0242eed681be",
+            "interfaces": [],
+            "ipv4": {
+                "address": "172.17.0.1",
+                "broadcast": "172.17.255.255",
+                "netmask": "255.255.0.0",
+                "network": "172.17.0.0"
+            },
+            "ipv6": [
+                {
+                    "address": "fe80::42:eeff:fed6:81be",
+                    "prefix": "64",
+                    "scope": "link"
+                }
+            ],
+            "macaddress": "02:42:ee:d6:81:be",
+            "mtu": 1500,
+            "promisc": false,
+            "stp": false,
+            "type": "bridge"
+        },
+        "ansible_domain": "",
+        "ansible_effective_group_id": 1000,
+        "ansible_effective_user_id": 1000,
+        "ansible_enp8s0": {
+            "active": false,
+            "device": "enp8s0",
+            "macaddress": "00:d8:61:31:15:42",
+            "module": "igb",
+            "mtu": 1500,
+            "pciid": "0000:08:00.0",
+            "promisc": false,
+            "speed": -1,
+            "type": "ether"
+        },
+        "ansible_env": {
+            "ARTIFACT_ROOT": "s3://artifacts/",
+            "AWS_ACCESS_KEY_ID": "test-access-key",
+            "AWS_SECRET_ACCESS_KEY": "test-secret-key",
+            "CLICOLOR": "1",
+            "CLUTTER_IM_MODULE": "xim",
+            "COLORTERM": "truecolor",
+            "CONDA_DEFAULT_ENV": "rayflow",
+            "CONDA_EXE": "/home/shyam/anaconda3/bin/conda",
+            "CONDA_PREFIX": "/home/shyam/anaconda3/envs/rayflow",
+            "CONDA_PREFIX_1": "/home/shyam/anaconda3",
+            "CONDA_PROMPT_MODIFIER": "(rayflow) ",
+            "CONDA_PYTHON_EXE": "/home/shyam/anaconda3/bin/python",
+            "CONDA_SHLVL": "2",
+            "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+            "DEFAULTS_PATH": "/usr/share/gconf/ubuntu.default.path",
+            "DESKTOP_AUTOSTART_ID": "105d8220cd7d27d1d8160131430464146000000025330007",
+            "DESKTOP_SESSION": "ubuntu",
+            "DISPLAY": ":1",
+            "GDMSESSION": "ubuntu",
+            "GIO_LAUNCHED_DESKTOP_FILE": "/etc/xdg/autostart/org.gnome.SettingsDaemon.MediaKeys.desktop",
+            "GIO_LAUNCHED_DESKTOP_FILE_PID": "2849",
+            "GIT_PAGER": "cat",
+            "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+            "GNOME_SHELL_SESSION_MODE": "ubuntu",
+            "GPG_AGENT_INFO": "/run/user/1000/gnupg/S.gpg-agent:0:1",
+            "GTK_IM_MODULE": "ibus",
+            "GTK_MODULES": "gail:atk-bridge",
+            "HOME": "/home/shyam",
+            "IM_CONFIG_PHASE": "2",
+            "JPY_PARENT_PID": "21914",
+            "KERNEL_LAUNCH_TIMEOUT": "40",
+            "LANG": "en_US.UTF-8",
+            "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+            "LESSOPEN": "| /usr/bin/lesspipe %s",
+            "LOGNAME": "shyam",
+            "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+            "MANDATORY_PATH": "/usr/share/gconf/ubuntu.mandatory.path",
+            "MINIO_ACCESS_KEY": "test-access-key",
+            "MINIO_SECRET_KEY": "test-secret-key",
+            "MLFLOW_S3_ENDPOINT_URL": "http://192.168.1.65:9001",
+            "MLFLOW_URL": "http://192.168.1.65:5000",
+            "MPLBACKEND": "module://ipykernel.pylab.backend_inline",
+            "OLDPWD": "/home/shyam/Code/MineRL/shytey-minerl2020/rayflow",
+            "OMP_NUM_THREADS": "1",
+            "PAGER": "cat",
+            "PATH": "/home/shyam/anaconda3/envs/rayflow/bin:/home/shyam/anaconda3/condabin:/home/shyam/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+            "PWD": "/tmp",
+            "QT4_IM_MODULE": "xim",
+            "QT_ACCESSIBILITY": "1",
+            "QT_IM_MODULE": "ibus",
+            "SESSION_MANAGER": "local/kokkgoblin:@/tmp/.ICE-unix/2533,unix/kokkgoblin:/tmp/.ICE-unix/2533",
+            "SHELL": "/bin/bash",
+            "SHLVL": "1",
+            "SSH_AGENT_PID": "2640",
+            "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+            "TERM": "xterm-color",
+            "TERMINATOR_DBUS_NAME": "net.tenshu.Terminator20x1a6021154d881d",
+            "TERMINATOR_DBUS_PATH": "/net/tenshu/Terminator2",
+            "TERMINATOR_UUID": "urn:uuid:bfc22ece-c118-417c-b580-651fa0487e83",
+            "TEXTDOMAIN": "im-config",
+            "TEXTDOMAINDIR": "/usr/share/locale/",
+            "USER": "shyam",
+            "USERNAME": "shyam",
+            "VTE_VERSION": "5202",
+            "WINDOWPATH": "2",
+            "XAUTHORITY": "/run/user/1000/gdm/Xauthority",
+            "XDG_CONFIG_DIRS": "/etc/xdg/xdg-ubuntu:/etc/xdg",
+            "XDG_CURRENT_DESKTOP": "ubuntu:GNOME",
+            "XDG_DATA_DIRS": "/usr/share/ubuntu:/home/shyam/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop",
+            "XDG_MENU_PREFIX": "gnome-",
+            "XDG_RUNTIME_DIR": "/run/user/1000",
+            "XDG_SEAT": "seat0",
+            "XDG_SESSION_DESKTOP": "ubuntu",
+            "XDG_SESSION_ID": "2",
+            "XDG_SESSION_TYPE": "x11",
+            "XDG_VTNR": "2",
+            "XMODIFIERS": "@im=ibus",
+            "_": "/home/shyam/anaconda3/envs/rayflow/bin/jupyter-notebook",
+            "_CE_CONDA": "",
+            "_CE_M": ""
+        },
+        "ansible_enx000f0051fe38": {
+            "active": true,
+            "device": "enx000f0051fe38",
+            "ipv4": {
+                "address": "192.168.1.65",
+                "broadcast": "192.168.1.255",
+                "netmask": "255.255.255.0",
+                "network": "192.168.1.0"
+            },
+            "ipv6": [
+                {
+                    "address": "fe80::55fe:1e93:eee8:d489",
+                    "prefix": "64",
+                    "scope": "link"
+                }
+            ],
+            "macaddress": "00:0f:00:51:fe:38",
+            "module": "8812au",
+            "mtu": 1500,
+            "pciid": "9-1:1.0",
+            "promisc": false,
+            "type": "ether"
+        },
+        "ansible_fibre_channel_wwn": [],
+        "ansible_fips": false,
+        "ansible_form_factor": "Desktop",
+        "ansible_fqdn": "kokkgoblin",
+        "ansible_hostname": "kokkgoblin",
+        "ansible_hostnqn": "",
+        "ansible_interfaces": [
+            "lo",
+            "enp8s0",
+            "enx000f0051fe38",
+            "docker0",
+            "br-490206f57378"
+        ],
+        "ansible_is_chroot": false,
+        "ansible_iscsi_iqn": "",
+        "ansible_kernel": "5.3.0-42-generic",
+        "ansible_lo": {
+            "active": true,
+            "device": "lo",
+            "ipv4": {
+                "address": "127.0.0.1",
+                "broadcast": "host",
+                "netmask": "255.0.0.0",
+                "network": "127.0.0.0"
+            },
+            "ipv6": [
+                {
+                    "address": "::1",
+                    "prefix": "128",
+                    "scope": "host"
+                }
+            ],
+            "mtu": 65536,
+            "promisc": false,
+            "type": "loopback"
+        },
+        "ansible_local": {},
+        "ansible_lsb": {
+            "codename": "bionic",
+            "description": "Ubuntu 18.04.4 LTS",
+            "id": "Ubuntu",
+            "major_release": "18",
+            "release": "18.04"
+        },
+        "ansible_machine": "x86_64",
+        "ansible_machine_id": "b98fbdcb95c146c49b0ae233a6af2144",
+        "ansible_memfree_mb": 25517,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 54108,
+                "used": 10143
+            },
+            "real": {
+                "free": 25517,
+                "total": 64251,
+                "used": 38734
+            },
+            "swap": {
+                "cached": 0,
+                "free": 65535,
+                "total": 65535,
+                "used": 0
+            }
+        },
+        "ansible_memtotal_mb": 64251,
+        "ansible_mounts": [
+            {
+                "block_available": 26194965,
+                "block_size": 4096,
+                "block_total": 239965964,
+                "block_used": 213770999,
+                "device": "/dev/nvme0n1p2",
+                "fstype": "ext4",
+                "inode_available": 59568006,
+                "inode_total": 61022208,
+                "inode_used": 1454202,
+                "mount": "/",
+                "options": "rw,relatime,errors=remount-ro",
+                "size_available": 107294576640,
+                "size_total": 982900588544,
+                "uuid": "f11d3641-4e9e-4200-8952-363ae699f875"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 1007,
+                "block_used": 1007,
+                "device": "/dev/loop1",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 3405,
+                "inode_used": 3405,
+                "mount": "/snap/docker/461",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 131989504,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 129273,
+                "block_size": 4096,
+                "block_total": 130812,
+                "block_used": 1539,
+                "device": "/dev/nvme0n1p1",
+                "fstype": "vfat",
+                "inode_available": 0,
+                "inode_total": 0,
+                "inode_used": 0,
+                "mount": "/boot/efi",
+                "options": "rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro",
+                "size_available": 529502208,
+                "size_total": 535805952,
+                "uuid": "31C1-DB9E"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 1310,
+                "block_used": 1310,
+                "device": "/dev/loop2",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 24012,
+                "inode_used": 24012,
+                "mount": "/snap/spotify/41",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 171704320,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 497,
+                "block_used": 497,
+                "device": "/dev/loop3",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 62342,
+                "inode_used": 62342,
+                "mount": "/snap/gtk-common-themes/1506",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 65142784,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 1007,
+                "block_used": 1007,
+                "device": "/dev/loop4",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 3405,
+                "inode_used": 3405,
+                "mount": "/snap/docker/471",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 131989504,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 18,
+                "block_used": 18,
+                "device": "/dev/loop5",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 784,
+                "inode_used": 784,
+                "mount": "/snap/gnome-system-monitor/145",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 2359296,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 3,
+                "block_used": 3,
+                "device": "/dev/loop0",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 230,
+                "inode_used": 230,
+                "mount": "/snap/gnome-characters/570",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 393216,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 1282,
+                "block_used": 1282,
+                "device": "/dev/loop6",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 27755,
+                "inode_used": 27755,
+                "mount": "/snap/gnome-3-28-1804/116",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 168034304,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 1292,
+                "block_used": 1292,
+                "device": "/dev/loop7",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 27798,
+                "inode_used": 27798,
+                "mount": "/snap/gnome-3-28-1804/128",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 169345024,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 443,
+                "block_used": 443,
+                "device": "/dev/loop9",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 10775,
+                "inode_used": 10775,
+                "mount": "/snap/core18/1885",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 58064896,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 18,
+                "block_used": 18,
+                "device": "/dev/loop8",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 784,
+                "inode_used": 784,
+                "mount": "/snap/gnome-system-monitor/148",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 2359296,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 8,
+                "block_used": 8,
+                "device": "/dev/loop10",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 353,
+                "inode_used": 353,
+                "mount": "/snap/gnome-logs/93",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 1048576,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 471,
+                "block_used": 471,
+                "device": "/dev/loop11",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 1540,
+                "inode_used": 1540,
+                "mount": "/snap/openspades/20",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 61734912,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 8,
+                "block_used": 8,
+                "device": "/dev/loop12",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 355,
+                "inode_used": 355,
+                "mount": "/snap/gnome-logs/100",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 1048576,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 20,
+                "block_used": 20,
+                "device": "/dev/loop13",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 1384,
+                "inode_used": 1384,
+                "mount": "/snap/gnome-calculator/826",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 2621440,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 439,
+                "block_used": 439,
+                "device": "/dev/loop14",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 47984,
+                "inode_used": 47984,
+                "mount": "/snap/gtk-common-themes/1502",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 57540608,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 20,
+                "block_used": 20,
+                "device": "/dev/loop15",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 1351,
+                "inode_used": 1351,
+                "mount": "/snap/gnome-calculator/748",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 2621440,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 95,
+                "block_used": 95,
+                "device": "/dev/loop16",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 9,
+                "inode_used": 9,
+                "mount": "/snap/ngrok/26",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 12451840,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 2045,
+                "block_used": 2045,
+                "device": "/dev/loop17",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 24339,
+                "inode_used": 24339,
+                "mount": "/snap/gnome-3-34-1804/36",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 268042240,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 95,
+                "block_used": 95,
+                "device": "/dev/loop18",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 11,
+                "inode_used": 11,
+                "mount": "/snap/ngrok/21",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 12451840,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 3,
+                "block_used": 3,
+                "device": "/dev/loop19",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 230,
+                "inode_used": 230,
+                "mount": "/snap/gnome-characters/550",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 393216,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 773,
+                "block_used": 773,
+                "device": "/dev/loop20",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 12796,
+                "inode_used": 12796,
+                "mount": "/snap/core/9804",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 101318656,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 440,
+                "block_used": 440,
+                "device": "/dev/loop21",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 10756,
+                "inode_used": 10756,
+                "mount": "/snap/core18/1880",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 57671680,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 2045,
+                "block_used": 2045,
+                "device": "/dev/loop22",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 24339,
+                "inode_used": 24339,
+                "mount": "/snap/gnome-3-34-1804/33",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 268042240,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 777,
+                "block_used": 777,
+                "device": "/dev/loop23",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 12804,
+                "inode_used": 12804,
+                "mount": "/snap/core/9993",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 101842944,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 0,
+                "block_size": 131072,
+                "block_total": 1355,
+                "block_used": 1355,
+                "device": "/dev/loop24",
+                "fstype": "squashfs",
+                "inode_available": 0,
+                "inode_total": 24072,
+                "inode_used": 24072,
+                "mount": "/snap/spotify/42",
+                "options": "ro,nodev,relatime",
+                "size_available": 0,
+                "size_total": 177602560,
+                "uuid": "N/A"
+            }
+        ],
+        "ansible_nodename": "kokkgoblin",
+        "ansible_os_family": "Debian",
+        "ansible_pkg_mgr": "apt",
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-5.3.0-42-generic",
+            "quiet": true,
+            "ro": true,
+            "root": "UUID=f11d3641-4e9e-4200-8952-363ae699f875",
+            "splash": true,
+            "vt.handoff": "1"
+        },
+        "ansible_processor": [
+            "0",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "1",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "2",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "3",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "4",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "5",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "6",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "7",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "8",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "9",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "10",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "11",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "12",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "13",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "14",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "15",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "16",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "17",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "18",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "19",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "20",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "21",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "22",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor",
+            "23",
+            "AuthenticAMD",
+            "AMD Ryzen Threadripper 1920X 12-Core Processor"
+        ],
+        "ansible_processor_cores": 12,
+        "ansible_processor_count": 1,
+        "ansible_processor_threads_per_core": 2,
+        "ansible_processor_vcpus": 24,
+        "ansible_product_name": "MS-7B09",
+        "ansible_product_serial": "NA",
+        "ansible_product_uuid": "NA",
+        "ansible_product_version": "1.0",
+        "ansible_python": {
+            "executable": "/home/shyam/anaconda3/envs/py37/bin/python",
+            "has_sslcontext": true,
+            "type": "cpython",
+            "version": {
+                "major": 3,
+                "micro": 4,
+                "minor": 7,
+                "releaselevel": "final",
+                "serial": 0
+            },
+            "version_info": [
+                3,
+                7,
+                4,
+                "final",
+                0
+            ]
+        },
+        "ansible_python_version": "3.7.4",
+        "ansible_real_group_id": 1000,
+        "ansible_real_user_id": 1000,
+        "ansible_selinux": {
+            "status": "Missing selinux Python library"
+        },
+        "ansible_selinux_python_present": false,
+        "ansible_service_mgr": "systemd",
+        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAO9NHhgyA0pv/oPq23LWRZ2I/aDNox0pyoz5EUMhzGBZdSOSPq4mFbIdrb6NVy/LsVn+n6SRBTYO6skWbTTf3GOCEUg1Hf2r2UcjMkyIOfuf4Lc2RYWkVEQSFDaYcl0CpguiL0DPfxY5GP3ZFG9HdIu5mSoNPlEQrIRxqaVTfxCrAAAAFQD0gI3QuqENlmC7MCBOSWs3bejE6QAAAIB6gpgSFkiJCT+JAQSFYh7a356L5ROaxveEIAAMX9latf2T3Rzpgpd770evy8zESZT1yuLuwPMd3StyL9Jc0gglWNQ1c4tl6i7GLCVONgVQK+FNpKKEwYOvfv9JQVn9l/1wGkLL+Va+uvU07wuoFZ0rpiU/imt+XvOJx0NQ9a5uewAAAIEA5D7hgxrjrbEQNKbuWeKoGCJ8Qxb2RxyA997yd/E1h7VAa2hKpVzrC/WRlCCzs2nn6NDMKDuQO+jPjYDvs+oH2EAC9wcFxQbZ78IFla9+ZTHIG7dqG0Q8hyZHLDQ/Jcr3x0l5AGGjdcyVE5FZ0IEqGo/gT7E4f7KqcPzNRV10L7Q=",
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBImKA2+1oMgUKsm9dlJExySi14jU+xM35isMxwOTKy+GS/RuS2beGkJwL06iVORZHmjCdwY0A2O+yu00RIiAXbM=",
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIEmUA8Rga8R3V1/thWI3Z+WCbmI+7tecqZ7p/Pdlj0+N",
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDP5cB1Dp4bdURjhU/V61Ad9NO+vq2+mYaNW/kb3supcny+1kLNrkuI2jGv056jATekGzwBdqA76zhvuO/B1xbBueanSsDUHNhqMHFELr3wRZFPxFuBfE3QAihUVb+fFcphxRTDkbOULFu8RWpfLT3qyjwXTmeXvh57gMyMUUiqwRsULtiXWMiBU7RWScvvyxkojJAemCn6aCo+tOFO63ixuR4i+2kO8eZWgMOpkXp4BrzXJFA9sZbt2SzeK5Ag72Tjd4Os6lOvLZMLvZnqt3lZsR5lgSJAmrLrFdgm1+eL+OtIDX3WRxe7SlOP5Deeifgs+JdxHhdggSvWuoybfeVX",
+        "ansible_swapfree_mb": 65535,
+        "ansible_swaptotal_mb": 65535,
+        "ansible_system": "Linux",
+        "ansible_system_capabilities": [
+            ""
+        ],
+        "ansible_system_capabilities_enforced": "True",
+        "ansible_system_vendor": "Micro-Star International Co., Ltd.",
+        "ansible_uptime_seconds": 24716,
+        "ansible_user_dir": "/home/shyam",
+        "ansible_user_gecos": "Shyam Sudhakaran,,,",
+        "ansible_user_gid": 1000,
+        "ansible_user_id": "shyam",
+        "ansible_user_shell": "/bin/bash",
+        "ansible_user_uid": 1000,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "ansible_virtualization_role": "host",
+        "ansible_virtualization_type": "kvm",
+        "gather_subset": [
+            "all"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}
+META: ran handlers
+
+TASK [startup-minio] ***********************************************************
+task path: /tmp/tmpdwo5xh6s.yml:5
+<192.168.1.65> ESTABLISH LOCAL CONNECTION FOR USER: shyam
+<192.168.1.65> EXEC /bin/sh -c 'echo ~shyam && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/shyam/.ansible/tmp/ansible-tmp-1601338615.3467462-115669116923357 `" && echo ansible-tmp-1601338615.3467462-115669116923357="` echo /home/shyam/.ansible/tmp/ansible-tmp-1601338615.3467462-115669116923357 `" ) && sleep 0'
+Using module file /home/shyam/anaconda3/envs/rayflow/lib/python3.7/site-packages/ansible/modules/cloud/docker/docker_container.py
+<192.168.1.65> PUT /home/shyam/.ansible/tmp/ansible-local-73585f512who2/tmpzy11otnb TO /home/shyam/.ansible/tmp/ansible-tmp-1601338615.3467462-115669116923357/AnsiballZ_docker_container.py
+<192.168.1.65> EXEC /bin/sh -c 'chmod u+x /home/shyam/.ansible/tmp/ansible-tmp-1601338615.3467462-115669116923357/ /home/shyam/.ansible/tmp/ansible-tmp-1601338615.3467462-115669116923357/AnsiballZ_docker_container.py && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '~/anaconda3/envs/py37/bin/python /home/shyam/.ansible/tmp/ansible-tmp-1601338615.3467462-115669116923357/AnsiballZ_docker_container.py && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c 'rm -f -r /home/shyam/.ansible/tmp/ansible-tmp-1601338615.3467462-115669116923357/ > /dev/null 2>&1 && sleep 0'
+changed: [192.168.1.65] => {
+    "ansible_facts": {
+        "docker_container": {
+            "AppArmorProfile": "docker-default",
+            "Args": [
+                "-c",
+                "mkdir -p /minio_data/artifacts/ && /usr/bin/minio server --address :9001 /minio_data"
+            ],
+            "Config": {
+                "AttachStderr": false,
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "Cmd": [
+                    "-c",
+                    "mkdir -p /minio_data/artifacts/ && /usr/bin/minio server --address :9001 /minio_data"
+                ],
+                "Domainname": "",
+                "Entrypoint": [
+                    "sh"
+                ],
+                "Env": [
+                    "MINIO_ACCESS_KEY=test-access-key",
+                    "MINIO_SECRET_KEY=test-secret-key",
+                    "MLFLOW_URL=http://192.168.1.65:5000",
+                    "MLFLOW_S3_ENDPOINT_URL=http://192.168.1.65:9001",
+                    "AWS_ACCESS_KEY_ID=test-access-key",
+                    "AWS_SECRET_ACCESS_KEY=test-secret-key",
+                    "ARTIFACT_ROOT=s3://artifacts/",
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "MINIO_UPDATE=off",
+                    "MINIO_ACCESS_KEY_FILE=access_key",
+                    "MINIO_SECRET_KEY_FILE=secret_key",
+                    "MINIO_KMS_MASTER_KEY_FILE=kms_master_key",
+                    "MINIO_SSE_MASTER_KEY_FILE=sse_master_key"
+                ],
+                "ExposedPorts": {
+                    "9000/tcp": {},
+                    "9001/tcp": {}
+                },
+                "Hostname": "kokkgoblin",
+                "Image": "minio/minio:latest",
+                "Labels": {
+                    "maintainer": "MinIO Inc <dev@min.io>"
+                },
+                "OnBuild": null,
+                "OpenStdin": true,
+                "StdinOnce": false,
+                "Tty": true,
+                "User": "",
+                "Volumes": {
+                    "/data": {},
+                    "/minio_data": {}
+                },
+                "WorkingDir": ""
+            },
+            "Created": "2020-09-29T00:16:55.871215331Z",
+            "Driver": "overlay2",
+            "ExecIDs": null,
+            "GraphDriver": {
+                "Data": {
+                    "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/81af7bc6a0fd047a401151a4b218ce24993b0b2f3b8affa8faa492e83d1b7f85-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/1854105bb85aae053b2a122a8c1b5f18e5606a0b65077482bd09e9bfe4bade51/diff:/var/snap/docker/common/var-lib-docker/overlay2/c7f67ac16f8cc3cc0671bcd51e682bb6ab89c20688adabad1ed2f00999e8af91/diff",
+                    "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/81af7bc6a0fd047a401151a4b218ce24993b0b2f3b8affa8faa492e83d1b7f85/merged",
+                    "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/81af7bc6a0fd047a401151a4b218ce24993b0b2f3b8affa8faa492e83d1b7f85/diff",
+                    "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/81af7bc6a0fd047a401151a4b218ce24993b0b2f3b8affa8faa492e83d1b7f85/work"
+                },
+                "Name": "overlay2"
+            },
+            "HostConfig": {
+                "AutoRemove": false,
+                "Binds": [
+                    "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/minio_volume:/minio_data:rw"
+                ],
+                "BlkioDeviceReadBps": null,
+                "BlkioDeviceReadIOps": null,
+                "BlkioDeviceWriteBps": null,
+                "BlkioDeviceWriteIOps": null,
+                "BlkioWeight": 0,
+                "BlkioWeightDevice": null,
+                "CapAdd": null,
+                "CapDrop": null,
+                "Capabilities": null,
+                "Cgroup": "",
+                "CgroupParent": "",
+                "ConsoleSize": [
+                    0,
+                    0
+                ],
+                "ContainerIDFile": "",
+                "CpuCount": 0,
+                "CpuPercent": 0,
+                "CpuPeriod": 0,
+                "CpuQuota": 0,
+                "CpuRealtimePeriod": 0,
+                "CpuRealtimeRuntime": 0,
+                "CpuShares": 0,
+                "CpusetCpus": "",
+                "CpusetMems": "",
+                "DeviceCgroupRules": null,
+                "DeviceRequests": null,
+                "Devices": null,
+                "Dns": null,
+                "DnsOptions": null,
+                "DnsSearch": null,
+                "ExtraHosts": null,
+                "GroupAdd": null,
+                "IOMaximumBandwidth": 0,
+                "IOMaximumIOps": 0,
+                "Init": false,
+                "IpcMode": "private",
+                "Isolation": "",
+                "KernelMemory": 0,
+                "KernelMemoryTCP": 0,
+                "Links": null,
+                "LogConfig": {
+                    "Config": {},
+                    "Type": "json-file"
+                },
+                "MaskedPaths": [
+                    "/proc/asound",
+                    "/proc/acpi",
+                    "/proc/kcore",
+                    "/proc/keys",
+                    "/proc/latency_stats",
+                    "/proc/timer_list",
+                    "/proc/timer_stats",
+                    "/proc/sched_debug",
+                    "/proc/scsi",
+                    "/sys/firmware"
+                ],
+                "Memory": 0,
+                "MemoryReservation": 0,
+                "MemorySwap": 0,
+                "MemorySwappiness": null,
+                "NanoCpus": 0,
+                "NetworkMode": "host",
+                "OomKillDisable": false,
+                "OomScoreAdj": 0,
+                "PidMode": "",
+                "PidsLimit": null,
+                "PortBindings": {
+                    "9001/tcp": [
+                        {
+                            "HostIp": "0.0.0.0",
+                            "HostPort": "9001"
+                        }
+                    ]
+                },
+                "Privileged": false,
+                "PublishAllPorts": false,
+                "ReadonlyPaths": [
+                    "/proc/bus",
+                    "/proc/fs",
+                    "/proc/irq",
+                    "/proc/sys",
+                    "/proc/sysrq-trigger"
+                ],
+                "ReadonlyRootfs": false,
+                "RestartPolicy": {
+                    "MaximumRetryCount": 0,
+                    "Name": ""
+                },
+                "Runtime": "runc",
+                "SecurityOpt": null,
+                "ShmSize": 67108864,
+                "UTSMode": "",
+                "Ulimits": null,
+                "UsernsMode": "",
+                "VolumeDriver": "",
+                "VolumesFrom": null
+            },
+            "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734/hostname",
+            "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734/hosts",
+            "Id": "226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734",
+            "Image": "sha256:aa416f912c09834966f2e4bdc2d7e58f7791a0be4ecf30db5dba8fce03dcdd53",
+            "LogPath": "/var/snap/docker/common/var-lib-docker/containers/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734-json.log",
+            "MountLabel": "",
+            "Mounts": [
+                {
+                    "Destination": "/data",
+                    "Driver": "local",
+                    "Mode": "",
+                    "Name": "18d0341f8533087a9424ad21186e2afff8576febb35b22aed07ed6d7e37fbea1",
+                    "Propagation": "",
+                    "RW": true,
+                    "Source": "/var/snap/docker/common/var-lib-docker/volumes/18d0341f8533087a9424ad21186e2afff8576febb35b22aed07ed6d7e37fbea1/_data",
+                    "Type": "volume"
+                },
+                {
+                    "Destination": "/minio_data",
+                    "Mode": "rw",
+                    "Propagation": "rprivate",
+                    "RW": true,
+                    "Source": "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/minio_volume",
+                    "Type": "bind"
+                }
+            ],
+            "Name": "/rayflow_minio",
+            "NetworkSettings": {
+                "Bridge": "",
+                "EndpointID": "",
+                "Gateway": "",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "HairpinMode": false,
+                "IPAddress": "",
+                "IPPrefixLen": 0,
+                "IPv6Gateway": "",
+                "LinkLocalIPv6Address": "",
+                "LinkLocalIPv6PrefixLen": 0,
+                "MacAddress": "",
+                "Networks": {
+                    "host": {
+                        "Aliases": null,
+                        "DriverOpts": null,
+                        "EndpointID": "03cede3395d5e8e652fb52b73510f53427858c565694a2ab66108d618881f8db",
+                        "Gateway": "",
+                        "GlobalIPv6Address": "",
+                        "GlobalIPv6PrefixLen": 0,
+                        "IPAMConfig": null,
+                        "IPAddress": "",
+                        "IPPrefixLen": 0,
+                        "IPv6Gateway": "",
+                        "Links": null,
+                        "MacAddress": "",
+                        "NetworkID": "4f70bf0fa43dc23cf8c176e821bf64d7a3ae80a2f7a8dd91b279424941b9f653"
+                    }
+                },
+                "Ports": {},
+                "SandboxID": "08e9d924812c2edbc5e1533c174300a69cb601cf55560ff0ca6f35284733beaf",
+                "SandboxKey": "/var/snap/docker/471/run/docker/netns/default",
+                "SecondaryIPAddresses": null,
+                "SecondaryIPv6Addresses": null
+            },
+            "Path": "sh",
+            "Platform": "linux",
+            "ProcessLabel": "",
+            "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734/resolv.conf",
+            "RestartCount": 0,
+            "State": {
+                "Dead": false,
+                "Error": "",
+                "ExitCode": 0,
+                "FinishedAt": "0001-01-01T00:00:00Z",
+                "OOMKilled": false,
+                "Paused": false,
+                "Pid": 73756,
+                "Restarting": false,
+                "Running": true,
+                "StartedAt": "2020-09-29T00:16:56.047011158Z",
+                "Status": "running"
+            }
+        }
+    },
+    "changed": true,
+    "container": {
+        "AppArmorProfile": "docker-default",
+        "Args": [
+            "-c",
+            "mkdir -p /minio_data/artifacts/ && /usr/bin/minio server --address :9001 /minio_data"
+        ],
+        "Config": {
+            "AttachStderr": false,
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "Cmd": [
+                "-c",
+                "mkdir -p /minio_data/artifacts/ && /usr/bin/minio server --address :9001 /minio_data"
+            ],
+            "Domainname": "",
+            "Entrypoint": [
+                "sh"
+            ],
+            "Env": [
+                "MINIO_ACCESS_KEY=test-access-key",
+                "MINIO_SECRET_KEY=test-secret-key",
+                "MLFLOW_URL=http://192.168.1.65:5000",
+                "MLFLOW_S3_ENDPOINT_URL=http://192.168.1.65:9001",
+                "AWS_ACCESS_KEY_ID=test-access-key",
+                "AWS_SECRET_ACCESS_KEY=test-secret-key",
+                "ARTIFACT_ROOT=s3://artifacts/",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "MINIO_UPDATE=off",
+                "MINIO_ACCESS_KEY_FILE=access_key",
+                "MINIO_SECRET_KEY_FILE=secret_key",
+                "MINIO_KMS_MASTER_KEY_FILE=kms_master_key",
+                "MINIO_SSE_MASTER_KEY_FILE=sse_master_key"
+            ],
+            "ExposedPorts": {
+                "9000/tcp": {},
+                "9001/tcp": {}
+            },
+            "Hostname": "kokkgoblin",
+            "Image": "minio/minio:latest",
+            "Labels": {
+                "maintainer": "MinIO Inc <dev@min.io>"
+            },
+            "OnBuild": null,
+            "OpenStdin": true,
+            "StdinOnce": false,
+            "Tty": true,
+            "User": "",
+            "Volumes": {
+                "/data": {},
+                "/minio_data": {}
+            },
+            "WorkingDir": ""
+        },
+        "Created": "2020-09-29T00:16:55.871215331Z",
+        "Driver": "overlay2",
+        "ExecIDs": null,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/81af7bc6a0fd047a401151a4b218ce24993b0b2f3b8affa8faa492e83d1b7f85-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/1854105bb85aae053b2a122a8c1b5f18e5606a0b65077482bd09e9bfe4bade51/diff:/var/snap/docker/common/var-lib-docker/overlay2/c7f67ac16f8cc3cc0671bcd51e682bb6ab89c20688adabad1ed2f00999e8af91/diff",
+                "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/81af7bc6a0fd047a401151a4b218ce24993b0b2f3b8affa8faa492e83d1b7f85/merged",
+                "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/81af7bc6a0fd047a401151a4b218ce24993b0b2f3b8affa8faa492e83d1b7f85/diff",
+                "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/81af7bc6a0fd047a401151a4b218ce24993b0b2f3b8affa8faa492e83d1b7f85/work"
+            },
+            "Name": "overlay2"
+        },
+        "HostConfig": {
+            "AutoRemove": false,
+            "Binds": [
+                "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/minio_volume:/minio_data:rw"
+            ],
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceWriteIOps": null,
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Capabilities": null,
+            "Cgroup": "",
+            "CgroupParent": "",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "ContainerIDFile": "",
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpuShares": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "Devices": null,
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IOMaximumBandwidth": 0,
+            "IOMaximumIOps": 0,
+            "Init": false,
+            "IpcMode": "private",
+            "Isolation": "",
+            "KernelMemory": 0,
+            "KernelMemoryTCP": 0,
+            "Links": null,
+            "LogConfig": {
+                "Config": {},
+                "Type": "json-file"
+            },
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "Memory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "NanoCpus": 0,
+            "NetworkMode": "host",
+            "OomKillDisable": false,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "PidsLimit": null,
+            "PortBindings": {
+                "9001/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "9001"
+                    }
+                ]
+            },
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ],
+            "ReadonlyRootfs": false,
+            "RestartPolicy": {
+                "MaximumRetryCount": 0,
+                "Name": ""
+            },
+            "Runtime": "runc",
+            "SecurityOpt": null,
+            "ShmSize": 67108864,
+            "UTSMode": "",
+            "Ulimits": null,
+            "UsernsMode": "",
+            "VolumeDriver": "",
+            "VolumesFrom": null
+        },
+        "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734/hostname",
+        "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734/hosts",
+        "Id": "226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734",
+        "Image": "sha256:aa416f912c09834966f2e4bdc2d7e58f7791a0be4ecf30db5dba8fce03dcdd53",
+        "LogPath": "/var/snap/docker/common/var-lib-docker/containers/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734-json.log",
+        "MountLabel": "",
+        "Mounts": [
+            {
+                "Destination": "/data",
+                "Driver": "local",
+                "Mode": "",
+                "Name": "18d0341f8533087a9424ad21186e2afff8576febb35b22aed07ed6d7e37fbea1",
+                "Propagation": "",
+                "RW": true,
+                "Source": "/var/snap/docker/common/var-lib-docker/volumes/18d0341f8533087a9424ad21186e2afff8576febb35b22aed07ed6d7e37fbea1/_data",
+                "Type": "volume"
+            },
+            {
+                "Destination": "/minio_data",
+                "Mode": "rw",
+                "Propagation": "rprivate",
+                "RW": true,
+                "Source": "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/minio_volume",
+                "Type": "bind"
+            }
+        ],
+        "Name": "/rayflow_minio",
+        "NetworkSettings": {
+            "Bridge": "",
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "HairpinMode": false,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "MacAddress": "",
+            "Networks": {
+                "host": {
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "EndpointID": "03cede3395d5e8e652fb52b73510f53427858c565694a2ab66108d618881f8db",
+                    "Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "IPAMConfig": null,
+                    "IPAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "Links": null,
+                    "MacAddress": "",
+                    "NetworkID": "4f70bf0fa43dc23cf8c176e821bf64d7a3ae80a2f7a8dd91b279424941b9f653"
+                }
+            },
+            "Ports": {},
+            "SandboxID": "08e9d924812c2edbc5e1533c174300a69cb601cf55560ff0ca6f35284733beaf",
+            "SandboxKey": "/var/snap/docker/471/run/docker/netns/default",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null
+        },
+        "Path": "sh",
+        "Platform": "linux",
+        "ProcessLabel": "",
+        "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734/resolv.conf",
+        "RestartCount": 0,
+        "State": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "0001-01-01T00:00:00Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 73756,
+            "Restarting": false,
+            "Running": true,
+            "StartedAt": "2020-09-29T00:16:56.047011158Z",
+            "Status": "running"
+        }
+    },
+    "invocation": {
+        "module_args": {
+            "api_version": "auto",
+            "auto_remove": false,
+            "blkio_weight": null,
+            "ca_cert": null,
+            "cap_drop": null,
+            "capabilities": null,
+            "cleanup": false,
+            "client_cert": null,
+            "client_key": null,
+            "command": "-c 'mkdir -p /minio_data/artifacts/ && /usr/bin/minio server --address :9001 /minio_data'",
+            "comparisons": null,
+            "cpu_period": null,
+            "cpu_quota": null,
+            "cpu_shares": null,
+            "cpuset_cpus": null,
+            "cpuset_mems": null,
+            "debug": false,
+            "detach": true,
+            "device_read_bps": null,
+            "device_read_iops": null,
+            "device_write_bps": null,
+            "device_write_iops": null,
+            "devices": null,
+            "dns_opts": null,
+            "dns_search_domains": null,
+            "dns_servers": null,
+            "docker_host": "unix://var/run/docker.sock",
+            "domainname": null,
+            "entrypoint": [
+                "sh"
+            ],
+            "env": {
+                "ARTIFACT_ROOT": "s3://artifacts/",
+                "AWS_ACCESS_KEY_ID": "test-access-key",
+                "AWS_SECRET_ACCESS_KEY": "test-secret-key",
+                "MINIO_ACCESS_KEY": "test-access-key",
+                "MINIO_SECRET_KEY": "test-secret-key",
+                "MLFLOW_S3_ENDPOINT_URL": "http://192.168.1.65:9001",
+                "MLFLOW_URL": "http://192.168.1.65:5000"
+            },
+            "env_file": null,
+            "etc_hosts": null,
+            "exposed_ports": null,
+            "force_kill": false,
+            "groups": null,
+            "healthcheck": null,
+            "hostname": null,
+            "ignore_image": false,
+            "image": "minio/minio:latest",
+            "init": false,
+            "interactive": true,
+            "ipc_mode": null,
+            "keep_volumes": true,
+            "kernel_memory": null,
+            "kill_signal": null,
+            "labels": null,
+            "links": null,
+            "log_driver": null,
+            "log_options": null,
+            "mac_address": null,
+            "memory": "0",
+            "memory_reservation": null,
+            "memory_swap": null,
+            "memory_swappiness": null,
+            "name": "rayflow_minio",
+            "network_mode": "host",
+            "networks": null,
+            "networks_cli_compatible": null,
+            "oom_killer": null,
+            "oom_score_adj": null,
+            "output_logs": false,
+            "paused": false,
+            "pid_mode": null,
+            "pids_limit": null,
+            "ports": [
+                "9001:9001"
+            ],
+            "privileged": false,
+            "published_ports": [
+                "9001:9001"
+            ],
+            "pull": false,
+            "purge_networks": false,
+            "read_only": false,
+            "recreate": false,
+            "restart": false,
+            "restart_policy": null,
+            "restart_retries": null,
+            "runtime": null,
+            "security_opts": null,
+            "shm_size": null,
+            "ssl_version": null,
+            "state": "started",
+            "stop_signal": null,
+            "stop_timeout": null,
+            "sysctls": null,
+            "timeout": 60,
+            "tls": false,
+            "tls_hostname": "localhost",
+            "tmpfs": null,
+            "trust_image_content": false,
+            "tty": true,
+            "ulimits": null,
+            "user": null,
+            "userns_mode": null,
+            "uts": null,
+            "validate_certs": false,
+            "volume_driver": null,
+            "volumes": [
+                "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/minio_volume:/minio_data"
+            ],
+            "volumes_from": null,
+            "working_dir": null
+        }
+    }
+}
+
+TASK [startup-mlflow] **********************************************************
+task path: /tmp/tmpdwo5xh6s.yml:44
+<192.168.1.65> ESTABLISH LOCAL CONNECTION FOR USER: shyam
+<192.168.1.65> EXEC /bin/sh -c 'echo ~shyam && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/shyam/.ansible/tmp/ansible-tmp-1601338616.1731608-101621329501515 `" && echo ansible-tmp-1601338616.1731608-101621329501515="` echo /home/shyam/.ansible/tmp/ansible-tmp-1601338616.1731608-101621329501515 `" ) && sleep 0'
+Using module file /home/shyam/anaconda3/envs/rayflow/lib/python3.7/site-packages/ansible/modules/cloud/docker/docker_container.py
+<192.168.1.65> PUT /home/shyam/.ansible/tmp/ansible-local-73585f512who2/tmp2mk05b10 TO /home/shyam/.ansible/tmp/ansible-tmp-1601338616.1731608-101621329501515/AnsiballZ_docker_container.py
+<192.168.1.65> EXEC /bin/sh -c 'chmod u+x /home/shyam/.ansible/tmp/ansible-tmp-1601338616.1731608-101621329501515/ /home/shyam/.ansible/tmp/ansible-tmp-1601338616.1731608-101621329501515/AnsiballZ_docker_container.py && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '~/anaconda3/envs/py37/bin/python /home/shyam/.ansible/tmp/ansible-tmp-1601338616.1731608-101621329501515/AnsiballZ_docker_container.py && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c 'rm -f -r /home/shyam/.ansible/tmp/ansible-tmp-1601338616.1731608-101621329501515/ > /dev/null 2>&1 && sleep 0'
+changed: [192.168.1.65] => {
+    "ansible_facts": {
+        "docker_container": {
+            "AppArmorProfile": "docker-default",
+            "Args": [
+                "server",
+                "--backend-store-uri",
+                "/mlflow",
+                "--host",
+                "192.168.1.65",
+                "-p",
+                "5000",
+                "--default-artifact-root",
+                "s3://artifacts/"
+            ],
+            "Config": {
+                "AttachStderr": false,
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "Cmd": [
+                    "mlflow",
+                    "server",
+                    "--backend-store-uri",
+                    "/mlflow",
+                    "--host",
+                    "192.168.1.65",
+                    "-p",
+                    "5000",
+                    "--default-artifact-root",
+                    "s3://artifacts/"
+                ],
+                "Domainname": "",
+                "Entrypoint": [],
+                "Env": [
+                    "MINIO_ACCESS_KEY=test-access-key",
+                    "MINIO_SECRET_KEY=test-secret-key",
+                    "MLFLOW_URL=http://192.168.1.65:5000",
+                    "MLFLOW_S3_ENDPOINT_URL=http://192.168.1.65:9001",
+                    "AWS_ACCESS_KEY_ID=test-access-key",
+                    "AWS_SECRET_ACCESS_KEY=test-secret-key",
+                    "ARTIFACT_ROOT=s3://artifacts/",
+                    "PATH=/opt/conda/envs/env/bin:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=C.UTF-8",
+                    "LC_ALL=C.UTF-8",
+                    "CODE_ROOT=/code/rayflow"
+                ],
+                "ExposedPorts": {
+                    "5000/tcp": {}
+                },
+                "Hostname": "kokkgoblin",
+                "Image": "shyamsn97/rayflow:latest",
+                "Labels": {
+                    "maintainer": "Shyam Sudhakaran <shyamsnair97@gmail.com>"
+                },
+                "OnBuild": null,
+                "OpenStdin": true,
+                "StdinOnce": false,
+                "Tty": true,
+                "User": "",
+                "Volumes": {
+                    "/mlflow": {}
+                },
+                "WorkingDir": "/code/rayflow"
+            },
+            "Created": "2020-09-29T00:16:56.632287213Z",
+            "Driver": "overlay2",
+            "ExecIDs": null,
+            "GraphDriver": {
+                "Data": {
+                    "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/9c24328e35a17d34322c5151a3d1fabfd9f32eb00e62d5a522cde75288017fa1-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/0ea8296862b3c127cc6156a723c25b6529d58840979db5ce64fbf963494a45ce/diff:/var/snap/docker/common/var-lib-docker/overlay2/c901d4a784c5fdb7535aa6d945e5e7402a937c7db948d66754b0e06c851487db/diff:/var/snap/docker/common/var-lib-docker/overlay2/aa854118f278cacd523139140cbdf2b5e50235818cd8da1ead67eb58752c3b84/diff:/var/snap/docker/common/var-lib-docker/overlay2/b873f04c3bbf3e29c432df8c886dbf55c47144e24a906916e4ce22435c73b2eb/diff:/var/snap/docker/common/var-lib-docker/overlay2/a643df34e94f7b8b0ee9d8043bca721a9c69f452060b230b736739edc901a9a7/diff:/var/snap/docker/common/var-lib-docker/overlay2/3de14f602c455b9199737a3edd6be932761ae461dca39d752b96836ac6f8fe54/diff:/var/snap/docker/common/var-lib-docker/overlay2/73f582a47791fb3f4308cc8087bde55a1f7ab10766c10e1541e36af627357596/diff:/var/snap/docker/common/var-lib-docker/overlay2/90f26a1352c84aa3369c4ffbd896e2aed46c9f16b1c7442e246df83d72e3ca08/diff:/var/snap/docker/common/var-lib-docker/overlay2/9a404fa2c31d3a5b3e28533dd38fdae8e3aecc10e26c35e4f0c286f667fb33e4/diff:/var/snap/docker/common/var-lib-docker/overlay2/c3fa5969f8dcf80a90925bafb38b0489334e784ab9847f0c47195c96418ee149/diff:/var/snap/docker/common/var-lib-docker/overlay2/671501ced4e3cd7600d2077dfa7da93bc0ef6f0ea56e20ca8eadaf647cdcae63/diff:/var/snap/docker/common/var-lib-docker/overlay2/6913876d0308cb21682fd1c11bc9abd2679839425a567e7ca145a72decc542cd/diff:/var/snap/docker/common/var-lib-docker/overlay2/9ae59e8810ff3c4a6a7fe8fd8866491b4034c1d5e9a952a9423c1bcb44b4452a/diff:/var/snap/docker/common/var-lib-docker/overlay2/0827230c7706b19690cace52eff431ef99d8dde393c4a19ee1cf1b717a50fc90/diff:/var/snap/docker/common/var-lib-docker/overlay2/3000771d481a1ea441c9e78e665cd5d02d3fe2034ee9f87366bc5a7cae1ac938/diff",
+                    "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/9c24328e35a17d34322c5151a3d1fabfd9f32eb00e62d5a522cde75288017fa1/merged",
+                    "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/9c24328e35a17d34322c5151a3d1fabfd9f32eb00e62d5a522cde75288017fa1/diff",
+                    "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/9c24328e35a17d34322c5151a3d1fabfd9f32eb00e62d5a522cde75288017fa1/work"
+                },
+                "Name": "overlay2"
+            },
+            "HostConfig": {
+                "AutoRemove": false,
+                "Binds": [
+                    "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/mlflow_volume:/mlflow:rw"
+                ],
+                "BlkioDeviceReadBps": null,
+                "BlkioDeviceReadIOps": null,
+                "BlkioDeviceWriteBps": null,
+                "BlkioDeviceWriteIOps": null,
+                "BlkioWeight": 0,
+                "BlkioWeightDevice": null,
+                "CapAdd": null,
+                "CapDrop": null,
+                "Capabilities": null,
+                "Cgroup": "",
+                "CgroupParent": "",
+                "ConsoleSize": [
+                    0,
+                    0
+                ],
+                "ContainerIDFile": "",
+                "CpuCount": 0,
+                "CpuPercent": 0,
+                "CpuPeriod": 0,
+                "CpuQuota": 0,
+                "CpuRealtimePeriod": 0,
+                "CpuRealtimeRuntime": 0,
+                "CpuShares": 0,
+                "CpusetCpus": "",
+                "CpusetMems": "",
+                "DeviceCgroupRules": null,
+                "DeviceRequests": null,
+                "Devices": null,
+                "Dns": null,
+                "DnsOptions": null,
+                "DnsSearch": null,
+                "ExtraHosts": null,
+                "GroupAdd": null,
+                "IOMaximumBandwidth": 0,
+                "IOMaximumIOps": 0,
+                "Init": false,
+                "IpcMode": "private",
+                "Isolation": "",
+                "KernelMemory": 0,
+                "KernelMemoryTCP": 0,
+                "Links": null,
+                "LogConfig": {
+                    "Config": {},
+                    "Type": "json-file"
+                },
+                "MaskedPaths": [
+                    "/proc/asound",
+                    "/proc/acpi",
+                    "/proc/kcore",
+                    "/proc/keys",
+                    "/proc/latency_stats",
+                    "/proc/timer_list",
+                    "/proc/timer_stats",
+                    "/proc/sched_debug",
+                    "/proc/scsi",
+                    "/sys/firmware"
+                ],
+                "Memory": 0,
+                "MemoryReservation": 0,
+                "MemorySwap": 0,
+                "MemorySwappiness": null,
+                "NanoCpus": 0,
+                "NetworkMode": "host",
+                "OomKillDisable": false,
+                "OomScoreAdj": 0,
+                "PidMode": "",
+                "PidsLimit": null,
+                "PortBindings": {
+                    "5000/tcp": [
+                        {
+                            "HostIp": "0.0.0.0",
+                            "HostPort": "5000"
+                        }
+                    ]
+                },
+                "Privileged": false,
+                "PublishAllPorts": false,
+                "ReadonlyPaths": [
+                    "/proc/bus",
+                    "/proc/fs",
+                    "/proc/irq",
+                    "/proc/sys",
+                    "/proc/sysrq-trigger"
+                ],
+                "ReadonlyRootfs": false,
+                "RestartPolicy": {
+                    "MaximumRetryCount": 0,
+                    "Name": ""
+                },
+                "Runtime": "runc",
+                "SecurityOpt": null,
+                "ShmSize": 67108864,
+                "UTSMode": "",
+                "Ulimits": null,
+                "UsernsMode": "",
+                "VolumeDriver": "",
+                "VolumesFrom": null
+            },
+            "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6/hostname",
+            "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6/hosts",
+            "Id": "d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6",
+            "Image": "sha256:5004635c7a8b0388fbd6d6f802334b00dba26caf98af0f267386f347ee6afcca",
+            "LogPath": "/var/snap/docker/common/var-lib-docker/containers/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6-json.log",
+            "MountLabel": "",
+            "Mounts": [
+                {
+                    "Destination": "/mlflow",
+                    "Mode": "rw",
+                    "Propagation": "rprivate",
+                    "RW": true,
+                    "Source": "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/mlflow_volume",
+                    "Type": "bind"
+                }
+            ],
+            "Name": "/rayflow_mlflow",
+            "NetworkSettings": {
+                "Bridge": "",
+                "EndpointID": "",
+                "Gateway": "",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "HairpinMode": false,
+                "IPAddress": "",
+                "IPPrefixLen": 0,
+                "IPv6Gateway": "",
+                "LinkLocalIPv6Address": "",
+                "LinkLocalIPv6PrefixLen": 0,
+                "MacAddress": "",
+                "Networks": {
+                    "host": {
+                        "Aliases": null,
+                        "DriverOpts": null,
+                        "EndpointID": "a0fb0303c3c64166acb19baef8ada96cbc05deba14691da13ea8c48e024c1396",
+                        "Gateway": "",
+                        "GlobalIPv6Address": "",
+                        "GlobalIPv6PrefixLen": 0,
+                        "IPAMConfig": null,
+                        "IPAddress": "",
+                        "IPPrefixLen": 0,
+                        "IPv6Gateway": "",
+                        "Links": null,
+                        "MacAddress": "",
+                        "NetworkID": "4f70bf0fa43dc23cf8c176e821bf64d7a3ae80a2f7a8dd91b279424941b9f653"
+                    }
+                },
+                "Ports": {},
+                "SandboxID": "3d318f8242f20f53e62fdd04fcd8a7d1e06f798daa878def02ffb8f4fd41a579",
+                "SandboxKey": "/var/snap/docker/471/run/docker/netns/default",
+                "SecondaryIPAddresses": null,
+                "SecondaryIPv6Addresses": null
+            },
+            "Path": "mlflow",
+            "Platform": "linux",
+            "ProcessLabel": "",
+            "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6/resolv.conf",
+            "RestartCount": 0,
+            "State": {
+                "Dead": false,
+                "Error": "",
+                "ExitCode": 0,
+                "FinishedAt": "0001-01-01T00:00:00Z",
+                "OOMKilled": false,
+                "Paused": false,
+                "Pid": 73881,
+                "Restarting": false,
+                "Running": true,
+                "StartedAt": "2020-09-29T00:16:56.812127578Z",
+                "Status": "running"
+            }
+        }
+    },
+    "changed": true,
+    "container": {
+        "AppArmorProfile": "docker-default",
+        "Args": [
+            "server",
+            "--backend-store-uri",
+            "/mlflow",
+            "--host",
+            "192.168.1.65",
+            "-p",
+            "5000",
+            "--default-artifact-root",
+            "s3://artifacts/"
+        ],
+        "Config": {
+            "AttachStderr": false,
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "Cmd": [
+                "mlflow",
+                "server",
+                "--backend-store-uri",
+                "/mlflow",
+                "--host",
+                "192.168.1.65",
+                "-p",
+                "5000",
+                "--default-artifact-root",
+                "s3://artifacts/"
+            ],
+            "Domainname": "",
+            "Entrypoint": [],
+            "Env": [
+                "MINIO_ACCESS_KEY=test-access-key",
+                "MINIO_SECRET_KEY=test-secret-key",
+                "MLFLOW_URL=http://192.168.1.65:5000",
+                "MLFLOW_S3_ENDPOINT_URL=http://192.168.1.65:9001",
+                "AWS_ACCESS_KEY_ID=test-access-key",
+                "AWS_SECRET_ACCESS_KEY=test-secret-key",
+                "ARTIFACT_ROOT=s3://artifacts/",
+                "PATH=/opt/conda/envs/env/bin:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "LC_ALL=C.UTF-8",
+                "CODE_ROOT=/code/rayflow"
+            ],
+            "ExposedPorts": {
+                "5000/tcp": {}
+            },
+            "Hostname": "kokkgoblin",
+            "Image": "shyamsn97/rayflow:latest",
+            "Labels": {
+                "maintainer": "Shyam Sudhakaran <shyamsnair97@gmail.com>"
+            },
+            "OnBuild": null,
+            "OpenStdin": true,
+            "StdinOnce": false,
+            "Tty": true,
+            "User": "",
+            "Volumes": {
+                "/mlflow": {}
+            },
+            "WorkingDir": "/code/rayflow"
+        },
+        "Created": "2020-09-29T00:16:56.632287213Z",
+        "Driver": "overlay2",
+        "ExecIDs": null,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/9c24328e35a17d34322c5151a3d1fabfd9f32eb00e62d5a522cde75288017fa1-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/0ea8296862b3c127cc6156a723c25b6529d58840979db5ce64fbf963494a45ce/diff:/var/snap/docker/common/var-lib-docker/overlay2/c901d4a784c5fdb7535aa6d945e5e7402a937c7db948d66754b0e06c851487db/diff:/var/snap/docker/common/var-lib-docker/overlay2/aa854118f278cacd523139140cbdf2b5e50235818cd8da1ead67eb58752c3b84/diff:/var/snap/docker/common/var-lib-docker/overlay2/b873f04c3bbf3e29c432df8c886dbf55c47144e24a906916e4ce22435c73b2eb/diff:/var/snap/docker/common/var-lib-docker/overlay2/a643df34e94f7b8b0ee9d8043bca721a9c69f452060b230b736739edc901a9a7/diff:/var/snap/docker/common/var-lib-docker/overlay2/3de14f602c455b9199737a3edd6be932761ae461dca39d752b96836ac6f8fe54/diff:/var/snap/docker/common/var-lib-docker/overlay2/73f582a47791fb3f4308cc8087bde55a1f7ab10766c10e1541e36af627357596/diff:/var/snap/docker/common/var-lib-docker/overlay2/90f26a1352c84aa3369c4ffbd896e2aed46c9f16b1c7442e246df83d72e3ca08/diff:/var/snap/docker/common/var-lib-docker/overlay2/9a404fa2c31d3a5b3e28533dd38fdae8e3aecc10e26c35e4f0c286f667fb33e4/diff:/var/snap/docker/common/var-lib-docker/overlay2/c3fa5969f8dcf80a90925bafb38b0489334e784ab9847f0c47195c96418ee149/diff:/var/snap/docker/common/var-lib-docker/overlay2/671501ced4e3cd7600d2077dfa7da93bc0ef6f0ea56e20ca8eadaf647cdcae63/diff:/var/snap/docker/common/var-lib-docker/overlay2/6913876d0308cb21682fd1c11bc9abd2679839425a567e7ca145a72decc542cd/diff:/var/snap/docker/common/var-lib-docker/overlay2/9ae59e8810ff3c4a6a7fe8fd8866491b4034c1d5e9a952a9423c1bcb44b4452a/diff:/var/snap/docker/common/var-lib-docker/overlay2/0827230c7706b19690cace52eff431ef99d8dde393c4a19ee1cf1b717a50fc90/diff:/var/snap/docker/common/var-lib-docker/overlay2/3000771d481a1ea441c9e78e665cd5d02d3fe2034ee9f87366bc5a7cae1ac938/diff",
+                "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/9c24328e35a17d34322c5151a3d1fabfd9f32eb00e62d5a522cde75288017fa1/merged",
+                "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/9c24328e35a17d34322c5151a3d1fabfd9f32eb00e62d5a522cde75288017fa1/diff",
+                "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/9c24328e35a17d34322c5151a3d1fabfd9f32eb00e62d5a522cde75288017fa1/work"
+            },
+            "Name": "overlay2"
+        },
+        "HostConfig": {
+            "AutoRemove": false,
+            "Binds": [
+                "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/mlflow_volume:/mlflow:rw"
+            ],
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceWriteIOps": null,
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Capabilities": null,
+            "Cgroup": "",
+            "CgroupParent": "",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "ContainerIDFile": "",
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpuShares": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "Devices": null,
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IOMaximumBandwidth": 0,
+            "IOMaximumIOps": 0,
+            "Init": false,
+            "IpcMode": "private",
+            "Isolation": "",
+            "KernelMemory": 0,
+            "KernelMemoryTCP": 0,
+            "Links": null,
+            "LogConfig": {
+                "Config": {},
+                "Type": "json-file"
+            },
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "Memory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "NanoCpus": 0,
+            "NetworkMode": "host",
+            "OomKillDisable": false,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "PidsLimit": null,
+            "PortBindings": {
+                "5000/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "5000"
+                    }
+                ]
+            },
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ],
+            "ReadonlyRootfs": false,
+            "RestartPolicy": {
+                "MaximumRetryCount": 0,
+                "Name": ""
+            },
+            "Runtime": "runc",
+            "SecurityOpt": null,
+            "ShmSize": 67108864,
+            "UTSMode": "",
+            "Ulimits": null,
+            "UsernsMode": "",
+            "VolumeDriver": "",
+            "VolumesFrom": null
+        },
+        "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6/hostname",
+        "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6/hosts",
+        "Id": "d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6",
+        "Image": "sha256:5004635c7a8b0388fbd6d6f802334b00dba26caf98af0f267386f347ee6afcca",
+        "LogPath": "/var/snap/docker/common/var-lib-docker/containers/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6-json.log",
+        "MountLabel": "",
+        "Mounts": [
+            {
+                "Destination": "/mlflow",
+                "Mode": "rw",
+                "Propagation": "rprivate",
+                "RW": true,
+                "Source": "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/mlflow_volume",
+                "Type": "bind"
+            }
+        ],
+        "Name": "/rayflow_mlflow",
+        "NetworkSettings": {
+            "Bridge": "",
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "HairpinMode": false,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "MacAddress": "",
+            "Networks": {
+                "host": {
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "EndpointID": "a0fb0303c3c64166acb19baef8ada96cbc05deba14691da13ea8c48e024c1396",
+                    "Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "IPAMConfig": null,
+                    "IPAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "Links": null,
+                    "MacAddress": "",
+                    "NetworkID": "4f70bf0fa43dc23cf8c176e821bf64d7a3ae80a2f7a8dd91b279424941b9f653"
+                }
+            },
+            "Ports": {},
+            "SandboxID": "3d318f8242f20f53e62fdd04fcd8a7d1e06f798daa878def02ffb8f4fd41a579",
+            "SandboxKey": "/var/snap/docker/471/run/docker/netns/default",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null
+        },
+        "Path": "mlflow",
+        "Platform": "linux",
+        "ProcessLabel": "",
+        "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6/resolv.conf",
+        "RestartCount": 0,
+        "State": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "0001-01-01T00:00:00Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 73881,
+            "Restarting": false,
+            "Running": true,
+            "StartedAt": "2020-09-29T00:16:56.812127578Z",
+            "Status": "running"
+        }
+    },
+    "invocation": {
+        "module_args": {
+            "api_version": "auto",
+            "auto_remove": false,
+            "blkio_weight": null,
+            "ca_cert": null,
+            "cap_drop": null,
+            "capabilities": null,
+            "cleanup": false,
+            "client_cert": null,
+            "client_key": null,
+            "command": "mlflow server --backend-store-uri /mlflow --host 192.168.1.65 -p 5000 --default-artifact-root s3://artifacts/",
+            "comparisons": null,
+            "cpu_period": null,
+            "cpu_quota": null,
+            "cpu_shares": null,
+            "cpuset_cpus": null,
+            "cpuset_mems": null,
+            "debug": false,
+            "detach": true,
+            "device_read_bps": null,
+            "device_read_iops": null,
+            "device_write_bps": null,
+            "device_write_iops": null,
+            "devices": null,
+            "dns_opts": null,
+            "dns_search_domains": null,
+            "dns_servers": null,
+            "docker_host": "unix://var/run/docker.sock",
+            "domainname": null,
+            "entrypoint": [],
+            "env": {
+                "ARTIFACT_ROOT": "s3://artifacts/",
+                "AWS_ACCESS_KEY_ID": "test-access-key",
+                "AWS_SECRET_ACCESS_KEY": "test-secret-key",
+                "MINIO_ACCESS_KEY": "test-access-key",
+                "MINIO_SECRET_KEY": "test-secret-key",
+                "MLFLOW_S3_ENDPOINT_URL": "http://192.168.1.65:9001",
+                "MLFLOW_URL": "http://192.168.1.65:5000"
+            },
+            "env_file": null,
+            "etc_hosts": null,
+            "exposed_ports": null,
+            "force_kill": false,
+            "groups": null,
+            "healthcheck": null,
+            "hostname": null,
+            "ignore_image": false,
+            "image": "shyamsn97/rayflow:latest",
+            "init": false,
+            "interactive": true,
+            "ipc_mode": null,
+            "keep_volumes": true,
+            "kernel_memory": null,
+            "kill_signal": null,
+            "labels": null,
+            "links": null,
+            "log_driver": null,
+            "log_options": null,
+            "mac_address": null,
+            "memory": "0",
+            "memory_reservation": null,
+            "memory_swap": null,
+            "memory_swappiness": null,
+            "name": "rayflow_mlflow",
+            "network_mode": "host",
+            "networks": null,
+            "networks_cli_compatible": null,
+            "oom_killer": null,
+            "oom_score_adj": null,
+            "output_logs": false,
+            "paused": false,
+            "pid_mode": null,
+            "pids_limit": null,
+            "ports": [
+                "5000:5000"
+            ],
+            "privileged": false,
+            "published_ports": [
+                "5000:5000"
+            ],
+            "pull": false,
+            "purge_networks": false,
+            "read_only": false,
+            "recreate": false,
+            "restart": false,
+            "restart_policy": null,
+            "restart_retries": null,
+            "runtime": null,
+            "security_opts": null,
+            "shm_size": null,
+            "ssl_version": null,
+            "state": "started",
+            "stop_signal": null,
+            "stop_timeout": null,
+            "sysctls": null,
+            "timeout": 60,
+            "tls": false,
+            "tls_hostname": "localhost",
+            "tmpfs": null,
+            "trust_image_content": false,
+            "tty": true,
+            "ulimits": null,
+            "user": null,
+            "userns_mode": null,
+            "uts": null,
+            "validate_certs": false,
+            "volume_driver": null,
+            "volumes": [
+                "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/mlflow_volume:/mlflow"
+            ],
+            "volumes_from": null,
+            "working_dir": null
+        }
+    }
+}
+META: ran handlers
+META: ran handlers
+
+PLAY RECAP *********************************************************************
+192.168.1.65               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

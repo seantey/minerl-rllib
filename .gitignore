@@ -8,3 +8,5 @@ build/
 minerl_rllib.egg-info/
 *.lock
 dist
+**/*/mlflow_volume
+**/*/minio_volume

@@ -1,0 +1,7 @@
+master_host:
+  - '127.0.0.1'
+worker_hosts:
+  - '127.0.0.1'
+host_info:
+  '127.0.0.1':
+    python_path: ~/anaconda3/envs/py37/bin/python
