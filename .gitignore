@@ -10,3 +10,4 @@ minerl_rllib.egg-info/
 dist
 **/*/mlflow_volume
 **/*/minio_volume
+**/*/mlflow_artifacts
