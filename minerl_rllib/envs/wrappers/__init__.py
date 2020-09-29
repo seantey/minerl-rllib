@@ -24,3 +24,23 @@ def wrap(env, discrete=False, num_actions=32, data_dir=None, num_stack=1, action
     if seed is not None:
         env = MineRLDeterministic(env, seed)
     return env
+
+def gym_wrap(env_class, env_kwargs, discrete=False, num_actions=32, data_dir=None, num_stack=1, action_repeat=1,
+            gray_scale=False, seed=None):
+    def wrap():
+        env = env_class(**env_kwargs)
+        env = MineRLTimeLimitWrapper(env)
+        env = MineRLObservationWrapper(env)
+        env = MineRLActionWrapper(env)
+        if discrete:
+            env = MineRLDiscreteActionWrapper(env, num_actions, data_dir=data_dir)
+        if gray_scale:
+            env = MineRLGrayScale(env)
+        if num_stack > 1:
+            env = MineRLObservationStack(env, num_stack)
+        if action_repeat > 1:
+            env = MineRLActionRepeat(env, action_repeat)
+        if seed is not None:
+            env = MineRLDeterministic(env, seed)
+        return env
+    return wrap
