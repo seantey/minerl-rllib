@@ -5,24 +5,24 @@ ansible-playbook 2.8.0
   executable location = /home/shyam/anaconda3/envs/rayflow/bin/ansible-playbook
   python version = 3.7.0 (default, Oct  9 2018, 10:31:47) [GCC 7.3.0]
 No config file found; using defaults
-host_list declined parsing /tmp/tmp6cafoq2_.yml as it did not pass it's verify_file() method
-script declined parsing /tmp/tmp6cafoq2_.yml as it did not pass it's verify_file() method
-Parsed /tmp/tmp6cafoq2_.yml inventory source with yaml plugin
+host_list declined parsing /tmp/tmpltkaf_0t.yml as it did not pass it's verify_file() method
+script declined parsing /tmp/tmpltkaf_0t.yml as it did not pass it's verify_file() method
+Parsed /tmp/tmpltkaf_0t.yml inventory source with yaml plugin
 
-PLAYBOOK: tmpdwo5xh6s.yml ******************************************************
-1 plays in /tmp/tmpdwo5xh6s.yml
+PLAYBOOK: tmpzump3yzm.yml ******************************************************
+1 plays in /tmp/tmpzump3yzm.yml
 
 PLAY [Set up master hosts] *****************************************************
 
 TASK [Gathering Facts] *********************************************************
-task path: /tmp/tmpdwo5xh6s.yml:1
+task path: /tmp/tmpzump3yzm.yml:1
 <192.168.1.65> ESTABLISH LOCAL CONNECTION FOR USER: shyam
 <192.168.1.65> EXEC /bin/sh -c 'echo ~shyam && sleep 0'
-<192.168.1.65> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/shyam/.ansible/tmp/ansible-tmp-1601338614.433881-204582543873210 `" && echo ansible-tmp-1601338614.433881-204582543873210="` echo /home/shyam/.ansible/tmp/ansible-tmp-1601338614.433881-204582543873210 `" ) && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/shyam/.ansible/tmp/ansible-tmp-1601340706.9868844-171409767665733 `" && echo ansible-tmp-1601340706.9868844-171409767665733="` echo /home/shyam/.ansible/tmp/ansible-tmp-1601340706.9868844-171409767665733 `" ) && sleep 0'
 Using module file /home/shyam/anaconda3/envs/rayflow/lib/python3.7/site-packages/ansible/modules/system/setup.py
-<192.168.1.65> PUT /home/shyam/.ansible/tmp/ansible-local-73585f512who2/tmpcg9c2k19 TO /home/shyam/.ansible/tmp/ansible-tmp-1601338614.433881-204582543873210/AnsiballZ_setup.py
-<192.168.1.65> EXEC /bin/sh -c 'chmod u+x /home/shyam/.ansible/tmp/ansible-tmp-1601338614.433881-204582543873210/ /home/shyam/.ansible/tmp/ansible-tmp-1601338614.433881-204582543873210/AnsiballZ_setup.py && sleep 0'
-<192.168.1.65> EXEC /bin/sh -c '~/anaconda3/envs/py37/bin/python /home/shyam/.ansible/tmp/ansible-tmp-1601338614.433881-204582543873210/AnsiballZ_setup.py && sleep 0'
+<192.168.1.65> PUT /home/shyam/.ansible/tmp/ansible-local-85689guav5glb/tmpcfyz78d1 TO /home/shyam/.ansible/tmp/ansible-tmp-1601340706.9868844-171409767665733/AnsiballZ_setup.py
+<192.168.1.65> EXEC /bin/sh -c 'chmod u+x /home/shyam/.ansible/tmp/ansible-tmp-1601340706.9868844-171409767665733/ /home/shyam/.ansible/tmp/ansible-tmp-1601340706.9868844-171409767665733/AnsiballZ_setup.py && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '~/anaconda3/envs/py37/bin/python /home/shyam/.ansible/tmp/ansible-tmp-1601340706.9868844-171409767665733/AnsiballZ_setup.py && sleep 0'
 ok: [192.168.1.65] => {
     "ansible_facts": {
         "ansible_all_ipv4_addresses": [
@@ -68,16 +68,16 @@ ok: [192.168.1.65] => {
         "ansible_date_time": {
             "date": "2020-09-28",
             "day": "28",
-            "epoch": "1601338614",
+            "epoch": "1601340707",
             "hour": "17",
-            "iso8601": "2020-09-29T00:16:54Z",
-            "iso8601_basic": "20200928T171654971753",
-            "iso8601_basic_short": "20200928T171654",
-            "iso8601_micro": "2020-09-29T00:16:54.971854Z",
-            "minute": "16",
+            "iso8601": "2020-09-29T00:51:47Z",
+            "iso8601_basic": "20200928T175147597918",
+            "iso8601_basic_short": "20200928T175147",
+            "iso8601_micro": "2020-09-29T00:51:47.598061Z",
+            "minute": "51",
             "month": "09",
-            "second": "54",
-            "time": "17:16:54",
+            "second": "47",
+            "time": "17:51:47",
             "tz": "PDT",
             "tz_offset": "-0700",
             "weekday": "Monday",
@@ -854,6 +854,7 @@ ok: [192.168.1.65] => {
             "CONDA_PROMPT_MODIFIER": "(rayflow) ",
             "CONDA_PYTHON_EXE": "/home/shyam/anaconda3/bin/python",
             "CONDA_SHLVL": "2",
+            "CRC32C_SW_MODE": "auto",
             "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
             "DEFAULTS_PATH": "/usr/share/gconf/ubuntu.default.path",
             "DESKTOP_AUTOSTART_ID": "105d8220cd7d27d1d8160131430464146000000025330007",
@@ -872,6 +873,8 @@ ok: [192.168.1.65] => {
             "IM_CONFIG_PHASE": "2",
             "JPY_PARENT_PID": "21914",
             "KERNEL_LAUNCH_TIMEOUT": "40",
+            "KMP_DUPLICATE_LIB_OK": "True",
+            "KMP_INIT_AT_FORK": "FALSE",
             "LANG": "en_US.UTF-8",
             "LESSCLOSE": "/usr/bin/lesspipe %s %s",
             "LESSOPEN": "| /usr/bin/lesspipe %s",
@@ -891,6 +894,8 @@ ok: [192.168.1.65] => {
             "QT4_IM_MODULE": "xim",
             "QT_ACCESSIBILITY": "1",
             "QT_IM_MODULE": "ibus",
+            "QT_QPA_FONTDIR": "/home/shyam/anaconda3/envs/rayflow/lib/python3.7/site-packages/cv2/qt/fonts",
+            "QT_QPA_PLATFORM_PLUGIN_PATH": "/home/shyam/anaconda3/envs/rayflow/lib/python3.7/site-packages/cv2/qt/plugins",
             "SESSION_MANAGER": "local/kokkgoblin:@/tmp/.ICE-unix/2533,unix/kokkgoblin:/tmp/.ICE-unix/2533",
             "SHELL": "/bin/bash",
             "SHLVL": "1",
@@ -902,6 +907,8 @@ ok: [192.168.1.65] => {
             "TERMINATOR_UUID": "urn:uuid:bfc22ece-c118-417c-b580-651fa0487e83",
             "TEXTDOMAIN": "im-config",
             "TEXTDOMAINDIR": "/usr/share/locale/",
+            "TF2_BEHAVIOR": "1",
+            "TF_CPP_MIN_LOG_LEVEL": "3",
             "USER": "shyam",
             "USERNAME": "shyam",
             "VTE_VERSION": "5202",
@@ -952,9 +959,9 @@ ok: [192.168.1.65] => {
         "ansible_hostname": "kokkgoblin",
         "ansible_hostnqn": "",
         "ansible_interfaces": [
+            "enx000f0051fe38",
             "lo",
             "enp8s0",
-            "enx000f0051fe38",
             "docker0",
             "br-490206f57378"
         ],
@@ -991,16 +998,16 @@ ok: [192.168.1.65] => {
         },
         "ansible_machine": "x86_64",
         "ansible_machine_id": "b98fbdcb95c146c49b0ae233a6af2144",
-        "ansible_memfree_mb": 25517,
+        "ansible_memfree_mb": 22547,
         "ansible_memory_mb": {
             "nocache": {
-                "free": 54108,
-                "used": 10143
+                "free": 51963,
+                "used": 12288
             },
             "real": {
-                "free": 25517,
+                "free": 22547,
                 "total": 64251,
-                "used": 38734
+                "used": 41704
             },
             "swap": {
                 "cached": 0,
@@ -1012,18 +1019,18 @@ ok: [192.168.1.65] => {
         "ansible_memtotal_mb": 64251,
         "ansible_mounts": [
             {
-                "block_available": 26194965,
+                "block_available": 26186776,
                 "block_size": 4096,
                 "block_total": 239965964,
-                "block_used": 213770999,
+                "block_used": 213779188,
                 "device": "/dev/nvme0n1p2",
                 "fstype": "ext4",
-                "inode_available": 59568006,
+                "inode_available": 59566856,
                 "inode_total": 61022208,
-                "inode_used": 1454202,
+                "inode_used": 1455352,
                 "mount": "/",
                 "options": "rw,relatime,errors=remount-ro",
-                "size_available": 107294576640,
+                "size_available": 107261034496,
                 "size_total": 982900588544,
                 "uuid": "f11d3641-4e9e-4200-8952-363ae699f875"
             },
@@ -1576,7 +1583,7 @@ ok: [192.168.1.65] => {
         ],
         "ansible_system_capabilities_enforced": "True",
         "ansible_system_vendor": "Micro-Star International Co., Ltd.",
-        "ansible_uptime_seconds": 24716,
+        "ansible_uptime_seconds": 26809,
         "ansible_user_dir": "/home/shyam",
         "ansible_user_gecos": "Shyam Sudhakaran,,,",
         "ansible_user_gid": 1000,
@@ -1596,520 +1603,18 @@ ok: [192.168.1.65] => {
 }
 META: ran handlers
 
-TASK [startup-minio] ***********************************************************
-task path: /tmp/tmpdwo5xh6s.yml:5
+TASK [take-down-minio] *********************************************************
+task path: /tmp/tmpzump3yzm.yml:32
 <192.168.1.65> ESTABLISH LOCAL CONNECTION FOR USER: shyam
 <192.168.1.65> EXEC /bin/sh -c 'echo ~shyam && sleep 0'
-<192.168.1.65> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/shyam/.ansible/tmp/ansible-tmp-1601338615.3467462-115669116923357 `" && echo ansible-tmp-1601338615.3467462-115669116923357="` echo /home/shyam/.ansible/tmp/ansible-tmp-1601338615.3467462-115669116923357 `" ) && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/shyam/.ansible/tmp/ansible-tmp-1601340707.889693-81126319892759 `" && echo ansible-tmp-1601340707.889693-81126319892759="` echo /home/shyam/.ansible/tmp/ansible-tmp-1601340707.889693-81126319892759 `" ) && sleep 0'
 Using module file /home/shyam/anaconda3/envs/rayflow/lib/python3.7/site-packages/ansible/modules/cloud/docker/docker_container.py
-<192.168.1.65> PUT /home/shyam/.ansible/tmp/ansible-local-73585f512who2/tmpzy11otnb TO /home/shyam/.ansible/tmp/ansible-tmp-1601338615.3467462-115669116923357/AnsiballZ_docker_container.py
-<192.168.1.65> EXEC /bin/sh -c 'chmod u+x /home/shyam/.ansible/tmp/ansible-tmp-1601338615.3467462-115669116923357/ /home/shyam/.ansible/tmp/ansible-tmp-1601338615.3467462-115669116923357/AnsiballZ_docker_container.py && sleep 0'
-<192.168.1.65> EXEC /bin/sh -c '~/anaconda3/envs/py37/bin/python /home/shyam/.ansible/tmp/ansible-tmp-1601338615.3467462-115669116923357/AnsiballZ_docker_container.py && sleep 0'
-<192.168.1.65> EXEC /bin/sh -c 'rm -f -r /home/shyam/.ansible/tmp/ansible-tmp-1601338615.3467462-115669116923357/ > /dev/null 2>&1 && sleep 0'
+<192.168.1.65> PUT /home/shyam/.ansible/tmp/ansible-local-85689guav5glb/tmp4q1kpqzh TO /home/shyam/.ansible/tmp/ansible-tmp-1601340707.889693-81126319892759/AnsiballZ_docker_container.py
+<192.168.1.65> EXEC /bin/sh -c 'chmod u+x /home/shyam/.ansible/tmp/ansible-tmp-1601340707.889693-81126319892759/ /home/shyam/.ansible/tmp/ansible-tmp-1601340707.889693-81126319892759/AnsiballZ_docker_container.py && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '~/anaconda3/envs/py37/bin/python /home/shyam/.ansible/tmp/ansible-tmp-1601340707.889693-81126319892759/AnsiballZ_docker_container.py && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c 'rm -f -r /home/shyam/.ansible/tmp/ansible-tmp-1601340707.889693-81126319892759/ > /dev/null 2>&1 && sleep 0'
 changed: [192.168.1.65] => {
-    "ansible_facts": {
-        "docker_container": {
-            "AppArmorProfile": "docker-default",
-            "Args": [
-                "-c",
-                "mkdir -p /minio_data/artifacts/ && /usr/bin/minio server --address :9001 /minio_data"
-            ],
-            "Config": {
-                "AttachStderr": false,
-                "AttachStdin": false,
-                "AttachStdout": false,
-                "Cmd": [
-                    "-c",
-                    "mkdir -p /minio_data/artifacts/ && /usr/bin/minio server --address :9001 /minio_data"
-                ],
-                "Domainname": "",
-                "Entrypoint": [
-                    "sh"
-                ],
-                "Env": [
-                    "MINIO_ACCESS_KEY=test-access-key",
-                    "MINIO_SECRET_KEY=test-secret-key",
-                    "MLFLOW_URL=http://192.168.1.65:5000",
-                    "MLFLOW_S3_ENDPOINT_URL=http://192.168.1.65:9001",
-                    "AWS_ACCESS_KEY_ID=test-access-key",
-                    "AWS_SECRET_ACCESS_KEY=test-secret-key",
-                    "ARTIFACT_ROOT=s3://artifacts/",
-                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
-                    "MINIO_UPDATE=off",
-                    "MINIO_ACCESS_KEY_FILE=access_key",
-                    "MINIO_SECRET_KEY_FILE=secret_key",
-                    "MINIO_KMS_MASTER_KEY_FILE=kms_master_key",
-                    "MINIO_SSE_MASTER_KEY_FILE=sse_master_key"
-                ],
-                "ExposedPorts": {
-                    "9000/tcp": {},
-                    "9001/tcp": {}
-                },
-                "Hostname": "kokkgoblin",
-                "Image": "minio/minio:latest",
-                "Labels": {
-                    "maintainer": "MinIO Inc <dev@min.io>"
-                },
-                "OnBuild": null,
-                "OpenStdin": true,
-                "StdinOnce": false,
-                "Tty": true,
-                "User": "",
-                "Volumes": {
-                    "/data": {},
-                    "/minio_data": {}
-                },
-                "WorkingDir": ""
-            },
-            "Created": "2020-09-29T00:16:55.871215331Z",
-            "Driver": "overlay2",
-            "ExecIDs": null,
-            "GraphDriver": {
-                "Data": {
-                    "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/81af7bc6a0fd047a401151a4b218ce24993b0b2f3b8affa8faa492e83d1b7f85-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/1854105bb85aae053b2a122a8c1b5f18e5606a0b65077482bd09e9bfe4bade51/diff:/var/snap/docker/common/var-lib-docker/overlay2/c7f67ac16f8cc3cc0671bcd51e682bb6ab89c20688adabad1ed2f00999e8af91/diff",
-                    "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/81af7bc6a0fd047a401151a4b218ce24993b0b2f3b8affa8faa492e83d1b7f85/merged",
-                    "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/81af7bc6a0fd047a401151a4b218ce24993b0b2f3b8affa8faa492e83d1b7f85/diff",
-                    "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/81af7bc6a0fd047a401151a4b218ce24993b0b2f3b8affa8faa492e83d1b7f85/work"
-                },
-                "Name": "overlay2"
-            },
-            "HostConfig": {
-                "AutoRemove": false,
-                "Binds": [
-                    "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/minio_volume:/minio_data:rw"
-                ],
-                "BlkioDeviceReadBps": null,
-                "BlkioDeviceReadIOps": null,
-                "BlkioDeviceWriteBps": null,
-                "BlkioDeviceWriteIOps": null,
-                "BlkioWeight": 0,
-                "BlkioWeightDevice": null,
-                "CapAdd": null,
-                "CapDrop": null,
-                "Capabilities": null,
-                "Cgroup": "",
-                "CgroupParent": "",
-                "ConsoleSize": [
-                    0,
-                    0
-                ],
-                "ContainerIDFile": "",
-                "CpuCount": 0,
-                "CpuPercent": 0,
-                "CpuPeriod": 0,
-                "CpuQuota": 0,
-                "CpuRealtimePeriod": 0,
-                "CpuRealtimeRuntime": 0,
-                "CpuShares": 0,
-                "CpusetCpus": "",
-                "CpusetMems": "",
-                "DeviceCgroupRules": null,
-                "DeviceRequests": null,
-                "Devices": null,
-                "Dns": null,
-                "DnsOptions": null,
-                "DnsSearch": null,
-                "ExtraHosts": null,
-                "GroupAdd": null,
-                "IOMaximumBandwidth": 0,
-                "IOMaximumIOps": 0,
-                "Init": false,
-                "IpcMode": "private",
-                "Isolation": "",
-                "KernelMemory": 0,
-                "KernelMemoryTCP": 0,
-                "Links": null,
-                "LogConfig": {
-                    "Config": {},
-                    "Type": "json-file"
-                },
-                "MaskedPaths": [
-                    "/proc/asound",
-                    "/proc/acpi",
-                    "/proc/kcore",
-                    "/proc/keys",
-                    "/proc/latency_stats",
-                    "/proc/timer_list",
-                    "/proc/timer_stats",
-                    "/proc/sched_debug",
-                    "/proc/scsi",
-                    "/sys/firmware"
-                ],
-                "Memory": 0,
-                "MemoryReservation": 0,
-                "MemorySwap": 0,
-                "MemorySwappiness": null,
-                "NanoCpus": 0,
-                "NetworkMode": "host",
-                "OomKillDisable": false,
-                "OomScoreAdj": 0,
-                "PidMode": "",
-                "PidsLimit": null,
-                "PortBindings": {
-                    "9001/tcp": [
-                        {
-                            "HostIp": "0.0.0.0",
-                            "HostPort": "9001"
-                        }
-                    ]
-                },
-                "Privileged": false,
-                "PublishAllPorts": false,
-                "ReadonlyPaths": [
-                    "/proc/bus",
-                    "/proc/fs",
-                    "/proc/irq",
-                    "/proc/sys",
-                    "/proc/sysrq-trigger"
-                ],
-                "ReadonlyRootfs": false,
-                "RestartPolicy": {
-                    "MaximumRetryCount": 0,
-                    "Name": ""
-                },
-                "Runtime": "runc",
-                "SecurityOpt": null,
-                "ShmSize": 67108864,
-                "UTSMode": "",
-                "Ulimits": null,
-                "UsernsMode": "",
-                "VolumeDriver": "",
-                "VolumesFrom": null
-            },
-            "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734/hostname",
-            "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734/hosts",
-            "Id": "226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734",
-            "Image": "sha256:aa416f912c09834966f2e4bdc2d7e58f7791a0be4ecf30db5dba8fce03dcdd53",
-            "LogPath": "/var/snap/docker/common/var-lib-docker/containers/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734-json.log",
-            "MountLabel": "",
-            "Mounts": [
-                {
-                    "Destination": "/data",
-                    "Driver": "local",
-                    "Mode": "",
-                    "Name": "18d0341f8533087a9424ad21186e2afff8576febb35b22aed07ed6d7e37fbea1",
-                    "Propagation": "",
-                    "RW": true,
-                    "Source": "/var/snap/docker/common/var-lib-docker/volumes/18d0341f8533087a9424ad21186e2afff8576febb35b22aed07ed6d7e37fbea1/_data",
-                    "Type": "volume"
-                },
-                {
-                    "Destination": "/minio_data",
-                    "Mode": "rw",
-                    "Propagation": "rprivate",
-                    "RW": true,
-                    "Source": "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/minio_volume",
-                    "Type": "bind"
-                }
-            ],
-            "Name": "/rayflow_minio",
-            "NetworkSettings": {
-                "Bridge": "",
-                "EndpointID": "",
-                "Gateway": "",
-                "GlobalIPv6Address": "",
-                "GlobalIPv6PrefixLen": 0,
-                "HairpinMode": false,
-                "IPAddress": "",
-                "IPPrefixLen": 0,
-                "IPv6Gateway": "",
-                "LinkLocalIPv6Address": "",
-                "LinkLocalIPv6PrefixLen": 0,
-                "MacAddress": "",
-                "Networks": {
-                    "host": {
-                        "Aliases": null,
-                        "DriverOpts": null,
-                        "EndpointID": "03cede3395d5e8e652fb52b73510f53427858c565694a2ab66108d618881f8db",
-                        "Gateway": "",
-                        "GlobalIPv6Address": "",
-                        "GlobalIPv6PrefixLen": 0,
-                        "IPAMConfig": null,
-                        "IPAddress": "",
-                        "IPPrefixLen": 0,
-                        "IPv6Gateway": "",
-                        "Links": null,
-                        "MacAddress": "",
-                        "NetworkID": "4f70bf0fa43dc23cf8c176e821bf64d7a3ae80a2f7a8dd91b279424941b9f653"
-                    }
-                },
-                "Ports": {},
-                "SandboxID": "08e9d924812c2edbc5e1533c174300a69cb601cf55560ff0ca6f35284733beaf",
-                "SandboxKey": "/var/snap/docker/471/run/docker/netns/default",
-                "SecondaryIPAddresses": null,
-                "SecondaryIPv6Addresses": null
-            },
-            "Path": "sh",
-            "Platform": "linux",
-            "ProcessLabel": "",
-            "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734/resolv.conf",
-            "RestartCount": 0,
-            "State": {
-                "Dead": false,
-                "Error": "",
-                "ExitCode": 0,
-                "FinishedAt": "0001-01-01T00:00:00Z",
-                "OOMKilled": false,
-                "Paused": false,
-                "Pid": 73756,
-                "Restarting": false,
-                "Running": true,
-                "StartedAt": "2020-09-29T00:16:56.047011158Z",
-                "Status": "running"
-            }
-        }
-    },
     "changed": true,
-    "container": {
-        "AppArmorProfile": "docker-default",
-        "Args": [
-            "-c",
-            "mkdir -p /minio_data/artifacts/ && /usr/bin/minio server --address :9001 /minio_data"
-        ],
-        "Config": {
-            "AttachStderr": false,
-            "AttachStdin": false,
-            "AttachStdout": false,
-            "Cmd": [
-                "-c",
-                "mkdir -p /minio_data/artifacts/ && /usr/bin/minio server --address :9001 /minio_data"
-            ],
-            "Domainname": "",
-            "Entrypoint": [
-                "sh"
-            ],
-            "Env": [
-                "MINIO_ACCESS_KEY=test-access-key",
-                "MINIO_SECRET_KEY=test-secret-key",
-                "MLFLOW_URL=http://192.168.1.65:5000",
-                "MLFLOW_S3_ENDPOINT_URL=http://192.168.1.65:9001",
-                "AWS_ACCESS_KEY_ID=test-access-key",
-                "AWS_SECRET_ACCESS_KEY=test-secret-key",
-                "ARTIFACT_ROOT=s3://artifacts/",
-                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
-                "MINIO_UPDATE=off",
-                "MINIO_ACCESS_KEY_FILE=access_key",
-                "MINIO_SECRET_KEY_FILE=secret_key",
-                "MINIO_KMS_MASTER_KEY_FILE=kms_master_key",
-                "MINIO_SSE_MASTER_KEY_FILE=sse_master_key"
-            ],
-            "ExposedPorts": {
-                "9000/tcp": {},
-                "9001/tcp": {}
-            },
-            "Hostname": "kokkgoblin",
-            "Image": "minio/minio:latest",
-            "Labels": {
-                "maintainer": "MinIO Inc <dev@min.io>"
-            },
-            "OnBuild": null,
-            "OpenStdin": true,
-            "StdinOnce": false,
-            "Tty": true,
-            "User": "",
-            "Volumes": {
-                "/data": {},
-                "/minio_data": {}
-            },
-            "WorkingDir": ""
-        },
-        "Created": "2020-09-29T00:16:55.871215331Z",
-        "Driver": "overlay2",
-        "ExecIDs": null,
-        "GraphDriver": {
-            "Data": {
-                "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/81af7bc6a0fd047a401151a4b218ce24993b0b2f3b8affa8faa492e83d1b7f85-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/1854105bb85aae053b2a122a8c1b5f18e5606a0b65077482bd09e9bfe4bade51/diff:/var/snap/docker/common/var-lib-docker/overlay2/c7f67ac16f8cc3cc0671bcd51e682bb6ab89c20688adabad1ed2f00999e8af91/diff",
-                "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/81af7bc6a0fd047a401151a4b218ce24993b0b2f3b8affa8faa492e83d1b7f85/merged",
-                "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/81af7bc6a0fd047a401151a4b218ce24993b0b2f3b8affa8faa492e83d1b7f85/diff",
-                "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/81af7bc6a0fd047a401151a4b218ce24993b0b2f3b8affa8faa492e83d1b7f85/work"
-            },
-            "Name": "overlay2"
-        },
-        "HostConfig": {
-            "AutoRemove": false,
-            "Binds": [
-                "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/minio_volume:/minio_data:rw"
-            ],
-            "BlkioDeviceReadBps": null,
-            "BlkioDeviceReadIOps": null,
-            "BlkioDeviceWriteBps": null,
-            "BlkioDeviceWriteIOps": null,
-            "BlkioWeight": 0,
-            "BlkioWeightDevice": null,
-            "CapAdd": null,
-            "CapDrop": null,
-            "Capabilities": null,
-            "Cgroup": "",
-            "CgroupParent": "",
-            "ConsoleSize": [
-                0,
-                0
-            ],
-            "ContainerIDFile": "",
-            "CpuCount": 0,
-            "CpuPercent": 0,
-            "CpuPeriod": 0,
-            "CpuQuota": 0,
-            "CpuRealtimePeriod": 0,
-            "CpuRealtimeRuntime": 0,
-            "CpuShares": 0,
-            "CpusetCpus": "",
-            "CpusetMems": "",
-            "DeviceCgroupRules": null,
-            "DeviceRequests": null,
-            "Devices": null,
-            "Dns": null,
-            "DnsOptions": null,
-            "DnsSearch": null,
-            "ExtraHosts": null,
-            "GroupAdd": null,
-            "IOMaximumBandwidth": 0,
-            "IOMaximumIOps": 0,
-            "Init": false,
-            "IpcMode": "private",
-            "Isolation": "",
-            "KernelMemory": 0,
-            "KernelMemoryTCP": 0,
-            "Links": null,
-            "LogConfig": {
-                "Config": {},
-                "Type": "json-file"
-            },
-            "MaskedPaths": [
-                "/proc/asound",
-                "/proc/acpi",
-                "/proc/kcore",
-                "/proc/keys",
-                "/proc/latency_stats",
-                "/proc/timer_list",
-                "/proc/timer_stats",
-                "/proc/sched_debug",
-                "/proc/scsi",
-                "/sys/firmware"
-            ],
-            "Memory": 0,
-            "MemoryReservation": 0,
-            "MemorySwap": 0,
-            "MemorySwappiness": null,
-            "NanoCpus": 0,
-            "NetworkMode": "host",
-            "OomKillDisable": false,
-            "OomScoreAdj": 0,
-            "PidMode": "",
-            "PidsLimit": null,
-            "PortBindings": {
-                "9001/tcp": [
-                    {
-                        "HostIp": "0.0.0.0",
-                        "HostPort": "9001"
-                    }
-                ]
-            },
-            "Privileged": false,
-            "PublishAllPorts": false,
-            "ReadonlyPaths": [
-                "/proc/bus",
-                "/proc/fs",
-                "/proc/irq",
-                "/proc/sys",
-                "/proc/sysrq-trigger"
-            ],
-            "ReadonlyRootfs": false,
-            "RestartPolicy": {
-                "MaximumRetryCount": 0,
-                "Name": ""
-            },
-            "Runtime": "runc",
-            "SecurityOpt": null,
-            "ShmSize": 67108864,
-            "UTSMode": "",
-            "Ulimits": null,
-            "UsernsMode": "",
-            "VolumeDriver": "",
-            "VolumesFrom": null
-        },
-        "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734/hostname",
-        "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734/hosts",
-        "Id": "226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734",
-        "Image": "sha256:aa416f912c09834966f2e4bdc2d7e58f7791a0be4ecf30db5dba8fce03dcdd53",
-        "LogPath": "/var/snap/docker/common/var-lib-docker/containers/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734-json.log",
-        "MountLabel": "",
-        "Mounts": [
-            {
-                "Destination": "/data",
-                "Driver": "local",
-                "Mode": "",
-                "Name": "18d0341f8533087a9424ad21186e2afff8576febb35b22aed07ed6d7e37fbea1",
-                "Propagation": "",
-                "RW": true,
-                "Source": "/var/snap/docker/common/var-lib-docker/volumes/18d0341f8533087a9424ad21186e2afff8576febb35b22aed07ed6d7e37fbea1/_data",
-                "Type": "volume"
-            },
-            {
-                "Destination": "/minio_data",
-                "Mode": "rw",
-                "Propagation": "rprivate",
-                "RW": true,
-                "Source": "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/minio_volume",
-                "Type": "bind"
-            }
-        ],
-        "Name": "/rayflow_minio",
-        "NetworkSettings": {
-            "Bridge": "",
-            "EndpointID": "",
-            "Gateway": "",
-            "GlobalIPv6Address": "",
-            "GlobalIPv6PrefixLen": 0,
-            "HairpinMode": false,
-            "IPAddress": "",
-            "IPPrefixLen": 0,
-            "IPv6Gateway": "",
-            "LinkLocalIPv6Address": "",
-            "LinkLocalIPv6PrefixLen": 0,
-            "MacAddress": "",
-            "Networks": {
-                "host": {
-                    "Aliases": null,
-                    "DriverOpts": null,
-                    "EndpointID": "03cede3395d5e8e652fb52b73510f53427858c565694a2ab66108d618881f8db",
-                    "Gateway": "",
-                    "GlobalIPv6Address": "",
-                    "GlobalIPv6PrefixLen": 0,
-                    "IPAMConfig": null,
-                    "IPAddress": "",
-                    "IPPrefixLen": 0,
-                    "IPv6Gateway": "",
-                    "Links": null,
-                    "MacAddress": "",
-                    "NetworkID": "4f70bf0fa43dc23cf8c176e821bf64d7a3ae80a2f7a8dd91b279424941b9f653"
-                }
-            },
-            "Ports": {},
-            "SandboxID": "08e9d924812c2edbc5e1533c174300a69cb601cf55560ff0ca6f35284733beaf",
-            "SandboxKey": "/var/snap/docker/471/run/docker/netns/default",
-            "SecondaryIPAddresses": null,
-            "SecondaryIPv6Addresses": null
-        },
-        "Path": "sh",
-        "Platform": "linux",
-        "ProcessLabel": "",
-        "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/226b56a9aced41fc88128b1a4c1bb867ddf61dfe3243eaf4f3cc27cfef762734/resolv.conf",
-        "RestartCount": 0,
-        "State": {
-            "Dead": false,
-            "Error": "",
-            "ExitCode": 0,
-            "FinishedAt": "0001-01-01T00:00:00Z",
-            "OOMKilled": false,
-            "Paused": false,
-            "Pid": 73756,
-            "Restarting": false,
-            "Running": true,
-            "StartedAt": "2020-09-29T00:16:56.047011158Z",
-            "Status": "running"
-        }
-    },
     "invocation": {
         "module_args": {
             "api_version": "auto",
@@ -2121,7 +1626,7 @@ changed: [192.168.1.65] => {
             "cleanup": false,
             "client_cert": null,
             "client_key": null,
-            "command": "-c 'mkdir -p /minio_data/artifacts/ && /usr/bin/minio server --address :9001 /minio_data'",
+            "command": null,
             "comparisons": null,
             "cpu_period": null,
             "cpu_quota": null,
@@ -2129,7 +1634,7 @@ changed: [192.168.1.65] => {
             "cpuset_cpus": null,
             "cpuset_mems": null,
             "debug": false,
-            "detach": true,
+            "detach": false,
             "device_read_bps": null,
             "device_read_iops": null,
             "device_write_bps": null,
@@ -2140,18 +1645,8 @@ changed: [192.168.1.65] => {
             "dns_servers": null,
             "docker_host": "unix://var/run/docker.sock",
             "domainname": null,
-            "entrypoint": [
-                "sh"
-            ],
-            "env": {
-                "ARTIFACT_ROOT": "s3://artifacts/",
-                "AWS_ACCESS_KEY_ID": "test-access-key",
-                "AWS_SECRET_ACCESS_KEY": "test-secret-key",
-                "MINIO_ACCESS_KEY": "test-access-key",
-                "MINIO_SECRET_KEY": "test-secret-key",
-                "MLFLOW_S3_ENDPOINT_URL": "http://192.168.1.65:9001",
-                "MLFLOW_URL": "http://192.168.1.65:5000"
-            },
+            "entrypoint": [],
+            "env": null,
             "env_file": null,
             "etc_hosts": null,
             "exposed_ports": null,
@@ -2160,9 +1655,9 @@ changed: [192.168.1.65] => {
             "healthcheck": null,
             "hostname": null,
             "ignore_image": false,
-            "image": "minio/minio:latest",
+            "image": null,
             "init": false,
-            "interactive": true,
+            "interactive": false,
             "ipc_mode": null,
             "keep_volumes": true,
             "kernel_memory": null,
@@ -2186,13 +1681,8 @@ changed: [192.168.1.65] => {
             "paused": false,
             "pid_mode": null,
             "pids_limit": null,
-            "ports": [
-                "9001:9001"
-            ],
             "privileged": false,
-            "published_ports": [
-                "9001:9001"
-            ],
+            "published_ports": null,
             "pull": false,
             "purge_networks": false,
             "read_only": false,
@@ -2204,7 +1694,7 @@ changed: [192.168.1.65] => {
             "security_opts": null,
             "shm_size": null,
             "ssl_version": null,
-            "state": "started",
+            "state": "absent",
             "stop_signal": null,
             "stop_timeout": null,
             "sysctls": null,
@@ -2213,534 +1703,32 @@ changed: [192.168.1.65] => {
             "tls_hostname": "localhost",
             "tmpfs": null,
             "trust_image_content": false,
-            "tty": true,
+            "tty": false,
             "ulimits": null,
             "user": null,
             "userns_mode": null,
             "uts": null,
             "validate_certs": false,
             "volume_driver": null,
-            "volumes": [
-                "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/minio_volume:/minio_data"
-            ],
+            "volumes": null,
             "volumes_from": null,
             "working_dir": null
         }
     }
 }
 
-TASK [startup-mlflow] **********************************************************
-task path: /tmp/tmpdwo5xh6s.yml:44
+TASK [take-down-mlflow] ********************************************************
+task path: /tmp/tmpzump3yzm.yml:70
 <192.168.1.65> ESTABLISH LOCAL CONNECTION FOR USER: shyam
 <192.168.1.65> EXEC /bin/sh -c 'echo ~shyam && sleep 0'
-<192.168.1.65> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/shyam/.ansible/tmp/ansible-tmp-1601338616.1731608-101621329501515 `" && echo ansible-tmp-1601338616.1731608-101621329501515="` echo /home/shyam/.ansible/tmp/ansible-tmp-1601338616.1731608-101621329501515 `" ) && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/shyam/.ansible/tmp/ansible-tmp-1601340709.1731353-19071780109753 `" && echo ansible-tmp-1601340709.1731353-19071780109753="` echo /home/shyam/.ansible/tmp/ansible-tmp-1601340709.1731353-19071780109753 `" ) && sleep 0'
 Using module file /home/shyam/anaconda3/envs/rayflow/lib/python3.7/site-packages/ansible/modules/cloud/docker/docker_container.py
-<192.168.1.65> PUT /home/shyam/.ansible/tmp/ansible-local-73585f512who2/tmp2mk05b10 TO /home/shyam/.ansible/tmp/ansible-tmp-1601338616.1731608-101621329501515/AnsiballZ_docker_container.py
-<192.168.1.65> EXEC /bin/sh -c 'chmod u+x /home/shyam/.ansible/tmp/ansible-tmp-1601338616.1731608-101621329501515/ /home/shyam/.ansible/tmp/ansible-tmp-1601338616.1731608-101621329501515/AnsiballZ_docker_container.py && sleep 0'
-<192.168.1.65> EXEC /bin/sh -c '~/anaconda3/envs/py37/bin/python /home/shyam/.ansible/tmp/ansible-tmp-1601338616.1731608-101621329501515/AnsiballZ_docker_container.py && sleep 0'
-<192.168.1.65> EXEC /bin/sh -c 'rm -f -r /home/shyam/.ansible/tmp/ansible-tmp-1601338616.1731608-101621329501515/ > /dev/null 2>&1 && sleep 0'
+<192.168.1.65> PUT /home/shyam/.ansible/tmp/ansible-local-85689guav5glb/tmpi7p22f68 TO /home/shyam/.ansible/tmp/ansible-tmp-1601340709.1731353-19071780109753/AnsiballZ_docker_container.py
+<192.168.1.65> EXEC /bin/sh -c 'chmod u+x /home/shyam/.ansible/tmp/ansible-tmp-1601340709.1731353-19071780109753/ /home/shyam/.ansible/tmp/ansible-tmp-1601340709.1731353-19071780109753/AnsiballZ_docker_container.py && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '~/anaconda3/envs/py37/bin/python /home/shyam/.ansible/tmp/ansible-tmp-1601340709.1731353-19071780109753/AnsiballZ_docker_container.py && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c 'rm -f -r /home/shyam/.ansible/tmp/ansible-tmp-1601340709.1731353-19071780109753/ > /dev/null 2>&1 && sleep 0'
 changed: [192.168.1.65] => {
-    "ansible_facts": {
-        "docker_container": {
-            "AppArmorProfile": "docker-default",
-            "Args": [
-                "server",
-                "--backend-store-uri",
-                "/mlflow",
-                "--host",
-                "192.168.1.65",
-                "-p",
-                "5000",
-                "--default-artifact-root",
-                "s3://artifacts/"
-            ],
-            "Config": {
-                "AttachStderr": false,
-                "AttachStdin": false,
-                "AttachStdout": false,
-                "Cmd": [
-                    "mlflow",
-                    "server",
-                    "--backend-store-uri",
-                    "/mlflow",
-                    "--host",
-                    "192.168.1.65",
-                    "-p",
-                    "5000",
-                    "--default-artifact-root",
-                    "s3://artifacts/"
-                ],
-                "Domainname": "",
-                "Entrypoint": [],
-                "Env": [
-                    "MINIO_ACCESS_KEY=test-access-key",
-                    "MINIO_SECRET_KEY=test-secret-key",
-                    "MLFLOW_URL=http://192.168.1.65:5000",
-                    "MLFLOW_S3_ENDPOINT_URL=http://192.168.1.65:9001",
-                    "AWS_ACCESS_KEY_ID=test-access-key",
-                    "AWS_SECRET_ACCESS_KEY=test-secret-key",
-                    "ARTIFACT_ROOT=s3://artifacts/",
-                    "PATH=/opt/conda/envs/env/bin:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
-                    "LANG=C.UTF-8",
-                    "LC_ALL=C.UTF-8",
-                    "CODE_ROOT=/code/rayflow"
-                ],
-                "ExposedPorts": {
-                    "5000/tcp": {}
-                },
-                "Hostname": "kokkgoblin",
-                "Image": "shyamsn97/rayflow:latest",
-                "Labels": {
-                    "maintainer": "Shyam Sudhakaran <shyamsnair97@gmail.com>"
-                },
-                "OnBuild": null,
-                "OpenStdin": true,
-                "StdinOnce": false,
-                "Tty": true,
-                "User": "",
-                "Volumes": {
-                    "/mlflow": {}
-                },
-                "WorkingDir": "/code/rayflow"
-            },
-            "Created": "2020-09-29T00:16:56.632287213Z",
-            "Driver": "overlay2",
-            "ExecIDs": null,
-            "GraphDriver": {
-                "Data": {
-                    "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/9c24328e35a17d34322c5151a3d1fabfd9f32eb00e62d5a522cde75288017fa1-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/0ea8296862b3c127cc6156a723c25b6529d58840979db5ce64fbf963494a45ce/diff:/var/snap/docker/common/var-lib-docker/overlay2/c901d4a784c5fdb7535aa6d945e5e7402a937c7db948d66754b0e06c851487db/diff:/var/snap/docker/common/var-lib-docker/overlay2/aa854118f278cacd523139140cbdf2b5e50235818cd8da1ead67eb58752c3b84/diff:/var/snap/docker/common/var-lib-docker/overlay2/b873f04c3bbf3e29c432df8c886dbf55c47144e24a906916e4ce22435c73b2eb/diff:/var/snap/docker/common/var-lib-docker/overlay2/a643df34e94f7b8b0ee9d8043bca721a9c69f452060b230b736739edc901a9a7/diff:/var/snap/docker/common/var-lib-docker/overlay2/3de14f602c455b9199737a3edd6be932761ae461dca39d752b96836ac6f8fe54/diff:/var/snap/docker/common/var-lib-docker/overlay2/73f582a47791fb3f4308cc8087bde55a1f7ab10766c10e1541e36af627357596/diff:/var/snap/docker/common/var-lib-docker/overlay2/90f26a1352c84aa3369c4ffbd896e2aed46c9f16b1c7442e246df83d72e3ca08/diff:/var/snap/docker/common/var-lib-docker/overlay2/9a404fa2c31d3a5b3e28533dd38fdae8e3aecc10e26c35e4f0c286f667fb33e4/diff:/var/snap/docker/common/var-lib-docker/overlay2/c3fa5969f8dcf80a90925bafb38b0489334e784ab9847f0c47195c96418ee149/diff:/var/snap/docker/common/var-lib-docker/overlay2/671501ced4e3cd7600d2077dfa7da93bc0ef6f0ea56e20ca8eadaf647cdcae63/diff:/var/snap/docker/common/var-lib-docker/overlay2/6913876d0308cb21682fd1c11bc9abd2679839425a567e7ca145a72decc542cd/diff:/var/snap/docker/common/var-lib-docker/overlay2/9ae59e8810ff3c4a6a7fe8fd8866491b4034c1d5e9a952a9423c1bcb44b4452a/diff:/var/snap/docker/common/var-lib-docker/overlay2/0827230c7706b19690cace52eff431ef99d8dde393c4a19ee1cf1b717a50fc90/diff:/var/snap/docker/common/var-lib-docker/overlay2/3000771d481a1ea441c9e78e665cd5d02d3fe2034ee9f87366bc5a7cae1ac938/diff",
-                    "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/9c24328e35a17d34322c5151a3d1fabfd9f32eb00e62d5a522cde75288017fa1/merged",
-                    "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/9c24328e35a17d34322c5151a3d1fabfd9f32eb00e62d5a522cde75288017fa1/diff",
-                    "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/9c24328e35a17d34322c5151a3d1fabfd9f32eb00e62d5a522cde75288017fa1/work"
-                },
-                "Name": "overlay2"
-            },
-            "HostConfig": {
-                "AutoRemove": false,
-                "Binds": [
-                    "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/mlflow_volume:/mlflow:rw"
-                ],
-                "BlkioDeviceReadBps": null,
-                "BlkioDeviceReadIOps": null,
-                "BlkioDeviceWriteBps": null,
-                "BlkioDeviceWriteIOps": null,
-                "BlkioWeight": 0,
-                "BlkioWeightDevice": null,
-                "CapAdd": null,
-                "CapDrop": null,
-                "Capabilities": null,
-                "Cgroup": "",
-                "CgroupParent": "",
-                "ConsoleSize": [
-                    0,
-                    0
-                ],
-                "ContainerIDFile": "",
-                "CpuCount": 0,
-                "CpuPercent": 0,
-                "CpuPeriod": 0,
-                "CpuQuota": 0,
-                "CpuRealtimePeriod": 0,
-                "CpuRealtimeRuntime": 0,
-                "CpuShares": 0,
-                "CpusetCpus": "",
-                "CpusetMems": "",
-                "DeviceCgroupRules": null,
-                "DeviceRequests": null,
-                "Devices": null,
-                "Dns": null,
-                "DnsOptions": null,
-                "DnsSearch": null,
-                "ExtraHosts": null,
-                "GroupAdd": null,
-                "IOMaximumBandwidth": 0,
-                "IOMaximumIOps": 0,
-                "Init": false,
-                "IpcMode": "private",
-                "Isolation": "",
-                "KernelMemory": 0,
-                "KernelMemoryTCP": 0,
-                "Links": null,
-                "LogConfig": {
-                    "Config": {},
-                    "Type": "json-file"
-                },
-                "MaskedPaths": [
-                    "/proc/asound",
-                    "/proc/acpi",
-                    "/proc/kcore",
-                    "/proc/keys",
-                    "/proc/latency_stats",
-                    "/proc/timer_list",
-                    "/proc/timer_stats",
-                    "/proc/sched_debug",
-                    "/proc/scsi",
-                    "/sys/firmware"
-                ],
-                "Memory": 0,
-                "MemoryReservation": 0,
-                "MemorySwap": 0,
-                "MemorySwappiness": null,
-                "NanoCpus": 0,
-                "NetworkMode": "host",
-                "OomKillDisable": false,
-                "OomScoreAdj": 0,
-                "PidMode": "",
-                "PidsLimit": null,
-                "PortBindings": {
-                    "5000/tcp": [
-                        {
-                            "HostIp": "0.0.0.0",
-                            "HostPort": "5000"
-                        }
-                    ]
-                },
-                "Privileged": false,
-                "PublishAllPorts": false,
-                "ReadonlyPaths": [
-                    "/proc/bus",
-                    "/proc/fs",
-                    "/proc/irq",
-                    "/proc/sys",
-                    "/proc/sysrq-trigger"
-                ],
-                "ReadonlyRootfs": false,
-                "RestartPolicy": {
-                    "MaximumRetryCount": 0,
-                    "Name": ""
-                },
-                "Runtime": "runc",
-                "SecurityOpt": null,
-                "ShmSize": 67108864,
-                "UTSMode": "",
-                "Ulimits": null,
-                "UsernsMode": "",
-                "VolumeDriver": "",
-                "VolumesFrom": null
-            },
-            "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6/hostname",
-            "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6/hosts",
-            "Id": "d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6",
-            "Image": "sha256:5004635c7a8b0388fbd6d6f802334b00dba26caf98af0f267386f347ee6afcca",
-            "LogPath": "/var/snap/docker/common/var-lib-docker/containers/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6-json.log",
-            "MountLabel": "",
-            "Mounts": [
-                {
-                    "Destination": "/mlflow",
-                    "Mode": "rw",
-                    "Propagation": "rprivate",
-                    "RW": true,
-                    "Source": "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/mlflow_volume",
-                    "Type": "bind"
-                }
-            ],
-            "Name": "/rayflow_mlflow",
-            "NetworkSettings": {
-                "Bridge": "",
-                "EndpointID": "",
-                "Gateway": "",
-                "GlobalIPv6Address": "",
-                "GlobalIPv6PrefixLen": 0,
-                "HairpinMode": false,
-                "IPAddress": "",
-                "IPPrefixLen": 0,
-                "IPv6Gateway": "",
-                "LinkLocalIPv6Address": "",
-                "LinkLocalIPv6PrefixLen": 0,
-                "MacAddress": "",
-                "Networks": {
-                    "host": {
-                        "Aliases": null,
-                        "DriverOpts": null,
-                        "EndpointID": "a0fb0303c3c64166acb19baef8ada96cbc05deba14691da13ea8c48e024c1396",
-                        "Gateway": "",
-                        "GlobalIPv6Address": "",
-                        "GlobalIPv6PrefixLen": 0,
-                        "IPAMConfig": null,
-                        "IPAddress": "",
-                        "IPPrefixLen": 0,
-                        "IPv6Gateway": "",
-                        "Links": null,
-                        "MacAddress": "",
-                        "NetworkID": "4f70bf0fa43dc23cf8c176e821bf64d7a3ae80a2f7a8dd91b279424941b9f653"
-                    }
-                },
-                "Ports": {},
-                "SandboxID": "3d318f8242f20f53e62fdd04fcd8a7d1e06f798daa878def02ffb8f4fd41a579",
-                "SandboxKey": "/var/snap/docker/471/run/docker/netns/default",
-                "SecondaryIPAddresses": null,
-                "SecondaryIPv6Addresses": null
-            },
-            "Path": "mlflow",
-            "Platform": "linux",
-            "ProcessLabel": "",
-            "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6/resolv.conf",
-            "RestartCount": 0,
-            "State": {
-                "Dead": false,
-                "Error": "",
-                "ExitCode": 0,
-                "FinishedAt": "0001-01-01T00:00:00Z",
-                "OOMKilled": false,
-                "Paused": false,
-                "Pid": 73881,
-                "Restarting": false,
-                "Running": true,
-                "StartedAt": "2020-09-29T00:16:56.812127578Z",
-                "Status": "running"
-            }
-        }
-    },
     "changed": true,
-    "container": {
-        "AppArmorProfile": "docker-default",
-        "Args": [
-            "server",
-            "--backend-store-uri",
-            "/mlflow",
-            "--host",
-            "192.168.1.65",
-            "-p",
-            "5000",
-            "--default-artifact-root",
-            "s3://artifacts/"
-        ],
-        "Config": {
-            "AttachStderr": false,
-            "AttachStdin": false,
-            "AttachStdout": false,
-            "Cmd": [
-                "mlflow",
-                "server",
-                "--backend-store-uri",
-                "/mlflow",
-                "--host",
-                "192.168.1.65",
-                "-p",
-                "5000",
-                "--default-artifact-root",
-                "s3://artifacts/"
-            ],
-            "Domainname": "",
-            "Entrypoint": [],
-            "Env": [
-                "MINIO_ACCESS_KEY=test-access-key",
-                "MINIO_SECRET_KEY=test-secret-key",
-                "MLFLOW_URL=http://192.168.1.65:5000",
-                "MLFLOW_S3_ENDPOINT_URL=http://192.168.1.65:9001",
-                "AWS_ACCESS_KEY_ID=test-access-key",
-                "AWS_SECRET_ACCESS_KEY=test-secret-key",
-                "ARTIFACT_ROOT=s3://artifacts/",
-                "PATH=/opt/conda/envs/env/bin:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
-                "LANG=C.UTF-8",
-                "LC_ALL=C.UTF-8",
-                "CODE_ROOT=/code/rayflow"
-            ],
-            "ExposedPorts": {
-                "5000/tcp": {}
-            },
-            "Hostname": "kokkgoblin",
-            "Image": "shyamsn97/rayflow:latest",
-            "Labels": {
-                "maintainer": "Shyam Sudhakaran <shyamsnair97@gmail.com>"
-            },
-            "OnBuild": null,
-            "OpenStdin": true,
-            "StdinOnce": false,
-            "Tty": true,
-            "User": "",
-            "Volumes": {
-                "/mlflow": {}
-            },
-            "WorkingDir": "/code/rayflow"
-        },
-        "Created": "2020-09-29T00:16:56.632287213Z",
-        "Driver": "overlay2",
-        "ExecIDs": null,
-        "GraphDriver": {
-            "Data": {
-                "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/9c24328e35a17d34322c5151a3d1fabfd9f32eb00e62d5a522cde75288017fa1-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/0ea8296862b3c127cc6156a723c25b6529d58840979db5ce64fbf963494a45ce/diff:/var/snap/docker/common/var-lib-docker/overlay2/c901d4a784c5fdb7535aa6d945e5e7402a937c7db948d66754b0e06c851487db/diff:/var/snap/docker/common/var-lib-docker/overlay2/aa854118f278cacd523139140cbdf2b5e50235818cd8da1ead67eb58752c3b84/diff:/var/snap/docker/common/var-lib-docker/overlay2/b873f04c3bbf3e29c432df8c886dbf55c47144e24a906916e4ce22435c73b2eb/diff:/var/snap/docker/common/var-lib-docker/overlay2/a643df34e94f7b8b0ee9d8043bca721a9c69f452060b230b736739edc901a9a7/diff:/var/snap/docker/common/var-lib-docker/overlay2/3de14f602c455b9199737a3edd6be932761ae461dca39d752b96836ac6f8fe54/diff:/var/snap/docker/common/var-lib-docker/overlay2/73f582a47791fb3f4308cc8087bde55a1f7ab10766c10e1541e36af627357596/diff:/var/snap/docker/common/var-lib-docker/overlay2/90f26a1352c84aa3369c4ffbd896e2aed46c9f16b1c7442e246df83d72e3ca08/diff:/var/snap/docker/common/var-lib-docker/overlay2/9a404fa2c31d3a5b3e28533dd38fdae8e3aecc10e26c35e4f0c286f667fb33e4/diff:/var/snap/docker/common/var-lib-docker/overlay2/c3fa5969f8dcf80a90925bafb38b0489334e784ab9847f0c47195c96418ee149/diff:/var/snap/docker/common/var-lib-docker/overlay2/671501ced4e3cd7600d2077dfa7da93bc0ef6f0ea56e20ca8eadaf647cdcae63/diff:/var/snap/docker/common/var-lib-docker/overlay2/6913876d0308cb21682fd1c11bc9abd2679839425a567e7ca145a72decc542cd/diff:/var/snap/docker/common/var-lib-docker/overlay2/9ae59e8810ff3c4a6a7fe8fd8866491b4034c1d5e9a952a9423c1bcb44b4452a/diff:/var/snap/docker/common/var-lib-docker/overlay2/0827230c7706b19690cace52eff431ef99d8dde393c4a19ee1cf1b717a50fc90/diff:/var/snap/docker/common/var-lib-docker/overlay2/3000771d481a1ea441c9e78e665cd5d02d3fe2034ee9f87366bc5a7cae1ac938/diff",
-                "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/9c24328e35a17d34322c5151a3d1fabfd9f32eb00e62d5a522cde75288017fa1/merged",
-                "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/9c24328e35a17d34322c5151a3d1fabfd9f32eb00e62d5a522cde75288017fa1/diff",
-                "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/9c24328e35a17d34322c5151a3d1fabfd9f32eb00e62d5a522cde75288017fa1/work"
-            },
-            "Name": "overlay2"
-        },
-        "HostConfig": {
-            "AutoRemove": false,
-            "Binds": [
-                "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/mlflow_volume:/mlflow:rw"
-            ],
-            "BlkioDeviceReadBps": null,
-            "BlkioDeviceReadIOps": null,
-            "BlkioDeviceWriteBps": null,
-            "BlkioDeviceWriteIOps": null,
-            "BlkioWeight": 0,
-            "BlkioWeightDevice": null,
-            "CapAdd": null,
-            "CapDrop": null,
-            "Capabilities": null,
-            "Cgroup": "",
-            "CgroupParent": "",
-            "ConsoleSize": [
-                0,
-                0
-            ],
-            "ContainerIDFile": "",
-            "CpuCount": 0,
-            "CpuPercent": 0,
-            "CpuPeriod": 0,
-            "CpuQuota": 0,
-            "CpuRealtimePeriod": 0,
-            "CpuRealtimeRuntime": 0,
-            "CpuShares": 0,
-            "CpusetCpus": "",
-            "CpusetMems": "",
-            "DeviceCgroupRules": null,
-            "DeviceRequests": null,
-            "Devices": null,
-            "Dns": null,
-            "DnsOptions": null,
-            "DnsSearch": null,
-            "ExtraHosts": null,
-            "GroupAdd": null,
-            "IOMaximumBandwidth": 0,
-            "IOMaximumIOps": 0,
-            "Init": false,
-            "IpcMode": "private",
-            "Isolation": "",
-            "KernelMemory": 0,
-            "KernelMemoryTCP": 0,
-            "Links": null,
-            "LogConfig": {
-                "Config": {},
-                "Type": "json-file"
-            },
-            "MaskedPaths": [
-                "/proc/asound",
-                "/proc/acpi",
-                "/proc/kcore",
-                "/proc/keys",
-                "/proc/latency_stats",
-                "/proc/timer_list",
-                "/proc/timer_stats",
-                "/proc/sched_debug",
-                "/proc/scsi",
-                "/sys/firmware"
-            ],
-            "Memory": 0,
-            "MemoryReservation": 0,
-            "MemorySwap": 0,
-            "MemorySwappiness": null,
-            "NanoCpus": 0,
-            "NetworkMode": "host",
-            "OomKillDisable": false,
-            "OomScoreAdj": 0,
-            "PidMode": "",
-            "PidsLimit": null,
-            "PortBindings": {
-                "5000/tcp": [
-                    {
-                        "HostIp": "0.0.0.0",
-                        "HostPort": "5000"
-                    }
-                ]
-            },
-            "Privileged": false,
-            "PublishAllPorts": false,
-            "ReadonlyPaths": [
-                "/proc/bus",
-                "/proc/fs",
-                "/proc/irq",
-                "/proc/sys",
-                "/proc/sysrq-trigger"
-            ],
-            "ReadonlyRootfs": false,
-            "RestartPolicy": {
-                "MaximumRetryCount": 0,
-                "Name": ""
-            },
-            "Runtime": "runc",
-            "SecurityOpt": null,
-            "ShmSize": 67108864,
-            "UTSMode": "",
-            "Ulimits": null,
-            "UsernsMode": "",
-            "VolumeDriver": "",
-            "VolumesFrom": null
-        },
-        "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6/hostname",
-        "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6/hosts",
-        "Id": "d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6",
-        "Image": "sha256:5004635c7a8b0388fbd6d6f802334b00dba26caf98af0f267386f347ee6afcca",
-        "LogPath": "/var/snap/docker/common/var-lib-docker/containers/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6-json.log",
-        "MountLabel": "",
-        "Mounts": [
-            {
-                "Destination": "/mlflow",
-                "Mode": "rw",
-                "Propagation": "rprivate",
-                "RW": true,
-                "Source": "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/mlflow_volume",
-                "Type": "bind"
-            }
-        ],
-        "Name": "/rayflow_mlflow",
-        "NetworkSettings": {
-            "Bridge": "",
-            "EndpointID": "",
-            "Gateway": "",
-            "GlobalIPv6Address": "",
-            "GlobalIPv6PrefixLen": 0,
-            "HairpinMode": false,
-            "IPAddress": "",
-            "IPPrefixLen": 0,
-            "IPv6Gateway": "",
-            "LinkLocalIPv6Address": "",
-            "LinkLocalIPv6PrefixLen": 0,
-            "MacAddress": "",
-            "Networks": {
-                "host": {
-                    "Aliases": null,
-                    "DriverOpts": null,
-                    "EndpointID": "a0fb0303c3c64166acb19baef8ada96cbc05deba14691da13ea8c48e024c1396",
-                    "Gateway": "",
-                    "GlobalIPv6Address": "",
-                    "GlobalIPv6PrefixLen": 0,
-                    "IPAMConfig": null,
-                    "IPAddress": "",
-                    "IPPrefixLen": 0,
-                    "IPv6Gateway": "",
-                    "Links": null,
-                    "MacAddress": "",
-                    "NetworkID": "4f70bf0fa43dc23cf8c176e821bf64d7a3ae80a2f7a8dd91b279424941b9f653"
-                }
-            },
-            "Ports": {},
-            "SandboxID": "3d318f8242f20f53e62fdd04fcd8a7d1e06f798daa878def02ffb8f4fd41a579",
-            "SandboxKey": "/var/snap/docker/471/run/docker/netns/default",
-            "SecondaryIPAddresses": null,
-            "SecondaryIPv6Addresses": null
-        },
-        "Path": "mlflow",
-        "Platform": "linux",
-        "ProcessLabel": "",
-        "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/d8290666587481017fcdb24571f4b220e9a613f02aef990404438c4de73b66d6/resolv.conf",
-        "RestartCount": 0,
-        "State": {
-            "Dead": false,
-            "Error": "",
-            "ExitCode": 0,
-            "FinishedAt": "0001-01-01T00:00:00Z",
-            "OOMKilled": false,
-            "Paused": false,
-            "Pid": 73881,
-            "Restarting": false,
-            "Running": true,
-            "StartedAt": "2020-09-29T00:16:56.812127578Z",
-            "Status": "running"
-        }
-    },
     "invocation": {
         "module_args": {
             "api_version": "auto",
@@ -2752,7 +1740,7 @@ changed: [192.168.1.65] => {
             "cleanup": false,
             "client_cert": null,
             "client_key": null,
-            "command": "mlflow server --backend-store-uri /mlflow --host 192.168.1.65 -p 5000 --default-artifact-root s3://artifacts/",
+            "command": null,
             "comparisons": null,
             "cpu_period": null,
             "cpu_quota": null,
@@ -2760,7 +1748,7 @@ changed: [192.168.1.65] => {
             "cpuset_cpus": null,
             "cpuset_mems": null,
             "debug": false,
-            "detach": true,
+            "detach": false,
             "device_read_bps": null,
             "device_read_iops": null,
             "device_write_bps": null,
@@ -2772,15 +1760,7 @@ changed: [192.168.1.65] => {
             "docker_host": "unix://var/run/docker.sock",
             "domainname": null,
             "entrypoint": [],
-            "env": {
-                "ARTIFACT_ROOT": "s3://artifacts/",
-                "AWS_ACCESS_KEY_ID": "test-access-key",
-                "AWS_SECRET_ACCESS_KEY": "test-secret-key",
-                "MINIO_ACCESS_KEY": "test-access-key",
-                "MINIO_SECRET_KEY": "test-secret-key",
-                "MLFLOW_S3_ENDPOINT_URL": "http://192.168.1.65:9001",
-                "MLFLOW_URL": "http://192.168.1.65:5000"
-            },
+            "env": null,
             "env_file": null,
             "etc_hosts": null,
             "exposed_ports": null,
@@ -2789,9 +1769,9 @@ changed: [192.168.1.65] => {
             "healthcheck": null,
             "hostname": null,
             "ignore_image": false,
-            "image": "shyamsn97/rayflow:latest",
+            "image": null,
             "init": false,
-            "interactive": true,
+            "interactive": false,
             "ipc_mode": null,
             "keep_volumes": true,
             "kernel_memory": null,
@@ -2815,13 +1795,8 @@ changed: [192.168.1.65] => {
             "paused": false,
             "pid_mode": null,
             "pids_limit": null,
-            "ports": [
-                "5000:5000"
-            ],
             "privileged": false,
-            "published_ports": [
-                "5000:5000"
-            ],
+            "published_ports": null,
             "pull": false,
             "purge_networks": false,
             "read_only": false,
@@ -2833,7 +1808,7 @@ changed: [192.168.1.65] => {
             "security_opts": null,
             "shm_size": null,
             "ssl_version": null,
-            "state": "started",
+            "state": "absent",
             "stop_signal": null,
             "stop_timeout": null,
             "sysctls": null,
@@ -2842,16 +1817,14 @@ changed: [192.168.1.65] => {
             "tls_hostname": "localhost",
             "tmpfs": null,
             "trust_image_content": false,
-            "tty": true,
+            "tty": false,
             "ulimits": null,
             "user": null,
             "userns_mode": null,
             "uts": null,
             "validate_certs": false,
             "volume_driver": null,
-            "volumes": [
-                "/home/shyam/Code/MineRL/shytey-minerl2020/minerl-rllib/experimental_notebooks/mlflow_volume:/mlflow"
-            ],
+            "volumes": null,
             "volumes_from": null,
             "working_dir": null
         }
