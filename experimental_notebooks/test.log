@@ -5,24 +5,24 @@ ansible-playbook 2.8.0
   executable location = /home/shyam/anaconda3/envs/rayflow/bin/ansible-playbook
   python version = 3.7.0 (default, Oct  9 2018, 10:31:47) [GCC 7.3.0]
 No config file found; using defaults
-host_list declined parsing /tmp/tmp114oqkkp.yml as it did not pass it's verify_file() method
-script declined parsing /tmp/tmp114oqkkp.yml as it did not pass it's verify_file() method
-Parsed /tmp/tmp114oqkkp.yml inventory source with yaml plugin
+host_list declined parsing /tmp/tmp_ncn3e4g.yml as it did not pass it's verify_file() method
+script declined parsing /tmp/tmp_ncn3e4g.yml as it did not pass it's verify_file() method
+Parsed /tmp/tmp_ncn3e4g.yml inventory source with yaml plugin
 
-PLAYBOOK: tmphzdoudez.yml ******************************************************
-1 plays in /tmp/tmphzdoudez.yml
+PLAYBOOK: tmp_d3ufvev.yml ******************************************************
+1 plays in /tmp/tmp_d3ufvev.yml
 
 PLAY [Set up master hosts] *****************************************************
 
 TASK [Gathering Facts] *********************************************************
-task path: /tmp/tmphzdoudez.yml:1
+task path: /tmp/tmp_d3ufvev.yml:1
 <192.168.1.65> ESTABLISH LOCAL CONNECTION FOR USER: shyam
 <192.168.1.65> EXEC /bin/sh -c 'echo ~shyam && sleep 0'
-<192.168.1.65> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/shyam/.ansible/tmp/ansible-tmp-1601412379.1153777-41195872777722 `" && echo ansible-tmp-1601412379.1153777-41195872777722="` echo /home/shyam/.ansible/tmp/ansible-tmp-1601412379.1153777-41195872777722 `" ) && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/shyam/.ansible/tmp/ansible-tmp-1601416959.5288796-254253213166613 `" && echo ansible-tmp-1601416959.5288796-254253213166613="` echo /home/shyam/.ansible/tmp/ansible-tmp-1601416959.5288796-254253213166613 `" ) && sleep 0'
 Using module file /home/shyam/anaconda3/envs/rayflow/lib/python3.7/site-packages/ansible/modules/system/setup.py
-<192.168.1.65> PUT /home/shyam/.ansible/tmp/ansible-local-103895kcv6h9fy/tmpvo9qdm5h TO /home/shyam/.ansible/tmp/ansible-tmp-1601412379.1153777-41195872777722/AnsiballZ_setup.py
-<192.168.1.65> EXEC /bin/sh -c 'chmod u+x /home/shyam/.ansible/tmp/ansible-tmp-1601412379.1153777-41195872777722/ /home/shyam/.ansible/tmp/ansible-tmp-1601412379.1153777-41195872777722/AnsiballZ_setup.py && sleep 0'
-<192.168.1.65> EXEC /bin/sh -c '~/anaconda3/envs/py37/bin/python /home/shyam/.ansible/tmp/ansible-tmp-1601412379.1153777-41195872777722/AnsiballZ_setup.py && sleep 0'
+<192.168.1.65> PUT /home/shyam/.ansible/tmp/ansible-local-1228834o7jt6wv/tmppu1cyi7k TO /home/shyam/.ansible/tmp/ansible-tmp-1601416959.5288796-254253213166613/AnsiballZ_setup.py
+<192.168.1.65> EXEC /bin/sh -c 'chmod u+x /home/shyam/.ansible/tmp/ansible-tmp-1601416959.5288796-254253213166613/ /home/shyam/.ansible/tmp/ansible-tmp-1601416959.5288796-254253213166613/AnsiballZ_setup.py && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '~/anaconda3/envs/py37/bin/python /home/shyam/.ansible/tmp/ansible-tmp-1601416959.5288796-254253213166613/AnsiballZ_setup.py && sleep 0'
 ok: [192.168.1.65] => {
     "ansible_facts": {
         "ansible_all_ipv4_addresses": [
@@ -68,16 +68,16 @@ ok: [192.168.1.65] => {
         "ansible_date_time": {
             "date": "2020-09-29",
             "day": "29",
-            "epoch": "1601412379",
-            "hour": "13",
-            "iso8601": "2020-09-29T20:46:19Z",
-            "iso8601_basic": "20200929T134619583604",
-            "iso8601_basic_short": "20200929T134619",
-            "iso8601_micro": "2020-09-29T20:46:19.583712Z",
-            "minute": "46",
+            "epoch": "1601416960",
+            "hour": "15",
+            "iso8601": "2020-09-29T22:02:40Z",
+            "iso8601_basic": "20200929T150240003679",
+            "iso8601_basic_short": "20200929T150240",
+            "iso8601_micro": "2020-09-29T22:02:40.003779Z",
+            "minute": "02",
             "month": "09",
-            "second": "19",
-            "time": "13:46:19",
+            "second": "40",
+            "time": "15:02:40",
             "tz": "PDT",
             "tz_offset": "-0700",
             "weekday": "Tuesday",
@@ -872,9 +872,9 @@ ok: [192.168.1.65] => {
             "IM_CONFIG_PHASE": "2",
             "JPY_PARENT_PID": "21914",
             "KERNEL_LAUNCH_TIMEOUT": "40",
-            "KMP_DUPLICATE_LIB_OK": "True",
-            "KMP_INIT_AT_FORK": "FALSE",
-            "LANG": "en_US.UTF-8",
+            "LANG": "C",
+            "LC_ALL": "C",
+            "LC_NUMERIC": "C",
             "LESSCLOSE": "/usr/bin/lesspipe %s %s",
             "LESSOPEN": "| /usr/bin/lesspipe %s",
             "LOGNAME": "shyam",
@@ -906,6 +906,8 @@ ok: [192.168.1.65] => {
             "TERMINATOR_UUID": "urn:uuid:bfc22ece-c118-417c-b580-651fa0487e83",
             "TEXTDOMAIN": "im-config",
             "TEXTDOMAINDIR": "/usr/share/locale/",
+            "TF2_BEHAVIOR": "1",
+            "TF_CPP_MIN_LOG_LEVEL": "3",
             "USER": "shyam",
             "USERNAME": "shyam",
             "VTE_VERSION": "5202",
@@ -956,11 +958,11 @@ ok: [192.168.1.65] => {
         "ansible_hostname": "kokkgoblin",
         "ansible_hostnqn": "",
         "ansible_interfaces": [
-            "enp8s0",
-            "enx000f0051fe38",
-            "docker0",
             "br-490206f57378",
-            "lo"
+            "lo",
+            "docker0",
+            "enp8s0",
+            "enx000f0051fe38"
         ],
         "ansible_is_chroot": false,
         "ansible_iscsi_iqn": "",
@@ -995,16 +997,16 @@ ok: [192.168.1.65] => {
         },
         "ansible_machine": "x86_64",
         "ansible_machine_id": "b98fbdcb95c146c49b0ae233a6af2144",
-        "ansible_memfree_mb": 39955,
+        "ansible_memfree_mb": 36039,
         "ansible_memory_mb": {
             "nocache": {
-                "free": 55356,
-                "used": 8895
+                "free": 51872,
+                "used": 12379
             },
             "real": {
-                "free": 39955,
+                "free": 36039,
                 "total": 64251,
-                "used": 24296
+                "used": 28212
             },
             "swap": {
                 "cached": 0,
@@ -1016,18 +1018,18 @@ ok: [192.168.1.65] => {
         "ansible_memtotal_mb": 64251,
         "ansible_mounts": [
             {
-                "block_available": 54700633,
+                "block_available": 54647342,
                 "block_size": 4096,
                 "block_total": 239965964,
-                "block_used": 185265331,
+                "block_used": 185318622,
                 "device": "/dev/nvme0n1p2",
                 "fstype": "ext4",
-                "inode_available": 59551689,
+                "inode_available": 59544988,
                 "inode_total": 61022208,
-                "inode_used": 1470519,
+                "inode_used": 1477220,
                 "mount": "/",
                 "options": "rw,relatime,errors=remount-ro",
-                "size_available": 224053792768,
+                "size_available": 223835512832,
                 "size_total": 982900588544,
                 "uuid": "f11d3641-4e9e-4200-8952-363ae699f875"
             },
@@ -1580,7 +1582,7 @@ ok: [192.168.1.65] => {
         ],
         "ansible_system_capabilities_enforced": "True",
         "ansible_system_vendor": "Micro-Star International Co., Ltd.",
-        "ansible_uptime_seconds": 98481,
+        "ansible_uptime_seconds": 103061,
         "ansible_user_dir": "/home/shyam",
         "ansible_user_gecos": "Shyam Sudhakaran,,,",
         "ansible_user_gid": 1000,
@@ -1601,15 +1603,15 @@ ok: [192.168.1.65] => {
 META: ran handlers
 
 TASK [startup-minio] ***********************************************************
-task path: /tmp/tmphzdoudez.yml:5
+task path: /tmp/tmp_d3ufvev.yml:5
 <192.168.1.65> ESTABLISH LOCAL CONNECTION FOR USER: shyam
 <192.168.1.65> EXEC /bin/sh -c 'echo ~shyam && sleep 0'
-<192.168.1.65> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/shyam/.ansible/tmp/ansible-tmp-1601412380.0542479-152241885400204 `" && echo ansible-tmp-1601412380.0542479-152241885400204="` echo /home/shyam/.ansible/tmp/ansible-tmp-1601412380.0542479-152241885400204 `" ) && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/shyam/.ansible/tmp/ansible-tmp-1601416961.4426072-237378247580963 `" && echo ansible-tmp-1601416961.4426072-237378247580963="` echo /home/shyam/.ansible/tmp/ansible-tmp-1601416961.4426072-237378247580963 `" ) && sleep 0'
 Using module file /home/shyam/anaconda3/envs/rayflow/lib/python3.7/site-packages/ansible/modules/cloud/docker/docker_container.py
-<192.168.1.65> PUT /home/shyam/.ansible/tmp/ansible-local-103895kcv6h9fy/tmpnag9daak TO /home/shyam/.ansible/tmp/ansible-tmp-1601412380.0542479-152241885400204/AnsiballZ_docker_container.py
-<192.168.1.65> EXEC /bin/sh -c 'chmod u+x /home/shyam/.ansible/tmp/ansible-tmp-1601412380.0542479-152241885400204/ /home/shyam/.ansible/tmp/ansible-tmp-1601412380.0542479-152241885400204/AnsiballZ_docker_container.py && sleep 0'
-<192.168.1.65> EXEC /bin/sh -c '~/anaconda3/envs/py37/bin/python /home/shyam/.ansible/tmp/ansible-tmp-1601412380.0542479-152241885400204/AnsiballZ_docker_container.py && sleep 0'
-<192.168.1.65> EXEC /bin/sh -c 'rm -f -r /home/shyam/.ansible/tmp/ansible-tmp-1601412380.0542479-152241885400204/ > /dev/null 2>&1 && sleep 0'
+<192.168.1.65> PUT /home/shyam/.ansible/tmp/ansible-local-1228834o7jt6wv/tmp6maxf8ll TO /home/shyam/.ansible/tmp/ansible-tmp-1601416961.4426072-237378247580963/AnsiballZ_docker_container.py
+<192.168.1.65> EXEC /bin/sh -c 'chmod u+x /home/shyam/.ansible/tmp/ansible-tmp-1601416961.4426072-237378247580963/ /home/shyam/.ansible/tmp/ansible-tmp-1601416961.4426072-237378247580963/AnsiballZ_docker_container.py && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '~/anaconda3/envs/py37/bin/python /home/shyam/.ansible/tmp/ansible-tmp-1601416961.4426072-237378247580963/AnsiballZ_docker_container.py && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c 'rm -f -r /home/shyam/.ansible/tmp/ansible-tmp-1601416961.4426072-237378247580963/ > /dev/null 2>&1 && sleep 0'
 changed: [192.168.1.65] => {
     "ansible_facts": {
         "docker_container": {
@@ -1665,15 +1667,15 @@ changed: [192.168.1.65] => {
                 },
                 "WorkingDir": ""
             },
-            "Created": "2020-09-29T20:46:20.634039646Z",
+            "Created": "2020-09-29T22:02:42.013323651Z",
             "Driver": "overlay2",
             "ExecIDs": null,
             "GraphDriver": {
                 "Data": {
-                    "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/093e3938634caa2d6a7570ebf8830a11ab318b60555293e38d7eb86a55f41579-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/1854105bb85aae053b2a122a8c1b5f18e5606a0b65077482bd09e9bfe4bade51/diff:/var/snap/docker/common/var-lib-docker/overlay2/c7f67ac16f8cc3cc0671bcd51e682bb6ab89c20688adabad1ed2f00999e8af91/diff",
-                    "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/093e3938634caa2d6a7570ebf8830a11ab318b60555293e38d7eb86a55f41579/merged",
-                    "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/093e3938634caa2d6a7570ebf8830a11ab318b60555293e38d7eb86a55f41579/diff",
-                    "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/093e3938634caa2d6a7570ebf8830a11ab318b60555293e38d7eb86a55f41579/work"
+                    "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/1d454f3678a1d5abef67de5ae296a0ce9736aa37f5dd6750016f10797c071b3f-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/1854105bb85aae053b2a122a8c1b5f18e5606a0b65077482bd09e9bfe4bade51/diff:/var/snap/docker/common/var-lib-docker/overlay2/c7f67ac16f8cc3cc0671bcd51e682bb6ab89c20688adabad1ed2f00999e8af91/diff",
+                    "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/1d454f3678a1d5abef67de5ae296a0ce9736aa37f5dd6750016f10797c071b3f/merged",
+                    "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/1d454f3678a1d5abef67de5ae296a0ce9736aa37f5dd6750016f10797c071b3f/diff",
+                    "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/1d454f3678a1d5abef67de5ae296a0ce9736aa37f5dd6750016f10797c071b3f/work"
                 },
                 "Name": "overlay2"
             },
@@ -1780,11 +1782,11 @@ changed: [192.168.1.65] => {
                 "VolumeDriver": "",
                 "VolumesFrom": null
             },
-            "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/127b0e671186ed7ec8fa79fd8d957e8017e4a770713130cfc71f4c5c2bb92bc9/hostname",
-            "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/127b0e671186ed7ec8fa79fd8d957e8017e4a770713130cfc71f4c5c2bb92bc9/hosts",
-            "Id": "127b0e671186ed7ec8fa79fd8d957e8017e4a770713130cfc71f4c5c2bb92bc9",
+            "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/8bd0297e227288b443eeefa7715893820a54a380fd9110bff38fd37ca72003d7/hostname",
+            "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/8bd0297e227288b443eeefa7715893820a54a380fd9110bff38fd37ca72003d7/hosts",
+            "Id": "8bd0297e227288b443eeefa7715893820a54a380fd9110bff38fd37ca72003d7",
             "Image": "sha256:aa416f912c09834966f2e4bdc2d7e58f7791a0be4ecf30db5dba8fce03dcdd53",
-            "LogPath": "/var/snap/docker/common/var-lib-docker/containers/127b0e671186ed7ec8fa79fd8d957e8017e4a770713130cfc71f4c5c2bb92bc9/127b0e671186ed7ec8fa79fd8d957e8017e4a770713130cfc71f4c5c2bb92bc9-json.log",
+            "LogPath": "/var/snap/docker/common/var-lib-docker/containers/8bd0297e227288b443eeefa7715893820a54a380fd9110bff38fd37ca72003d7/8bd0297e227288b443eeefa7715893820a54a380fd9110bff38fd37ca72003d7-json.log",
             "MountLabel": "",
             "Mounts": [
                 {
@@ -1799,10 +1801,10 @@ changed: [192.168.1.65] => {
                     "Destination": "/data",
                     "Driver": "local",
                     "Mode": "",
-                    "Name": "da098fd975cdbdcb6a35e5be8aee45a943ec173e5b97f7268bf434286e7d4557",
+                    "Name": "0d5af34d16162901113e8c7aea58f929593a5c202d5f20baf702079f48decc94",
                     "Propagation": "",
                     "RW": true,
-                    "Source": "/var/snap/docker/common/var-lib-docker/volumes/da098fd975cdbdcb6a35e5be8aee45a943ec173e5b97f7268bf434286e7d4557/_data",
+                    "Source": "/var/snap/docker/common/var-lib-docker/volumes/0d5af34d16162901113e8c7aea58f929593a5c202d5f20baf702079f48decc94/_data",
                     "Type": "volume"
                 }
             ],
@@ -1824,7 +1826,7 @@ changed: [192.168.1.65] => {
                     "host": {
                         "Aliases": null,
                         "DriverOpts": null,
-                        "EndpointID": "6f48230b5592745081aef8e96eaf8a78de0f08f9139bc1ad977dade53c383dbc",
+                        "EndpointID": "4ad61f1ef070a45fa5b2effcc4d08147eb1a3ad735c3ebb742736b7965e4c6b2",
                         "Gateway": "",
                         "GlobalIPv6Address": "",
                         "GlobalIPv6PrefixLen": 0,
@@ -1838,7 +1840,7 @@ changed: [192.168.1.65] => {
                     }
                 },
                 "Ports": {},
-                "SandboxID": "a4f0cccf739614844fa1850f6e11a8ef8097b53acdf52efad09b8a8d21a6c412",
+                "SandboxID": "28da76255889dafa2faef100db0f94ab1b8b649f06a1f30729bbdb92cbca8bf2",
                 "SandboxKey": "/var/snap/docker/471/run/docker/netns/default",
                 "SecondaryIPAddresses": null,
                 "SecondaryIPv6Addresses": null
@@ -1846,7 +1848,7 @@ changed: [192.168.1.65] => {
             "Path": "sh",
             "Platform": "linux",
             "ProcessLabel": "",
-            "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/127b0e671186ed7ec8fa79fd8d957e8017e4a770713130cfc71f4c5c2bb92bc9/resolv.conf",
+            "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/8bd0297e227288b443eeefa7715893820a54a380fd9110bff38fd37ca72003d7/resolv.conf",
             "RestartCount": 0,
             "State": {
                 "Dead": false,
@@ -1855,10 +1857,10 @@ changed: [192.168.1.65] => {
                 "FinishedAt": "0001-01-01T00:00:00Z",
                 "OOMKilled": false,
                 "Paused": false,
-                "Pid": 104084,
+                "Pid": 123063,
                 "Restarting": false,
                 "Running": true,
-                "StartedAt": "2020-09-29T20:46:20.810562711Z",
+                "StartedAt": "2020-09-29T22:02:42.186255699Z",
                 "Status": "running"
             }
         }
@@ -1917,15 +1919,15 @@ changed: [192.168.1.65] => {
             },
             "WorkingDir": ""
         },
-        "Created": "2020-09-29T20:46:20.634039646Z",
+        "Created": "2020-09-29T22:02:42.013323651Z",
         "Driver": "overlay2",
         "ExecIDs": null,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/093e3938634caa2d6a7570ebf8830a11ab318b60555293e38d7eb86a55f41579-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/1854105bb85aae053b2a122a8c1b5f18e5606a0b65077482bd09e9bfe4bade51/diff:/var/snap/docker/common/var-lib-docker/overlay2/c7f67ac16f8cc3cc0671bcd51e682bb6ab89c20688adabad1ed2f00999e8af91/diff",
-                "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/093e3938634caa2d6a7570ebf8830a11ab318b60555293e38d7eb86a55f41579/merged",
-                "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/093e3938634caa2d6a7570ebf8830a11ab318b60555293e38d7eb86a55f41579/diff",
-                "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/093e3938634caa2d6a7570ebf8830a11ab318b60555293e38d7eb86a55f41579/work"
+                "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/1d454f3678a1d5abef67de5ae296a0ce9736aa37f5dd6750016f10797c071b3f-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/1854105bb85aae053b2a122a8c1b5f18e5606a0b65077482bd09e9bfe4bade51/diff:/var/snap/docker/common/var-lib-docker/overlay2/c7f67ac16f8cc3cc0671bcd51e682bb6ab89c20688adabad1ed2f00999e8af91/diff",
+                "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/1d454f3678a1d5abef67de5ae296a0ce9736aa37f5dd6750016f10797c071b3f/merged",
+                "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/1d454f3678a1d5abef67de5ae296a0ce9736aa37f5dd6750016f10797c071b3f/diff",
+                "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/1d454f3678a1d5abef67de5ae296a0ce9736aa37f5dd6750016f10797c071b3f/work"
             },
             "Name": "overlay2"
         },
@@ -2032,11 +2034,11 @@ changed: [192.168.1.65] => {
             "VolumeDriver": "",
             "VolumesFrom": null
         },
-        "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/127b0e671186ed7ec8fa79fd8d957e8017e4a770713130cfc71f4c5c2bb92bc9/hostname",
-        "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/127b0e671186ed7ec8fa79fd8d957e8017e4a770713130cfc71f4c5c2bb92bc9/hosts",
-        "Id": "127b0e671186ed7ec8fa79fd8d957e8017e4a770713130cfc71f4c5c2bb92bc9",
+        "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/8bd0297e227288b443eeefa7715893820a54a380fd9110bff38fd37ca72003d7/hostname",
+        "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/8bd0297e227288b443eeefa7715893820a54a380fd9110bff38fd37ca72003d7/hosts",
+        "Id": "8bd0297e227288b443eeefa7715893820a54a380fd9110bff38fd37ca72003d7",
         "Image": "sha256:aa416f912c09834966f2e4bdc2d7e58f7791a0be4ecf30db5dba8fce03dcdd53",
-        "LogPath": "/var/snap/docker/common/var-lib-docker/containers/127b0e671186ed7ec8fa79fd8d957e8017e4a770713130cfc71f4c5c2bb92bc9/127b0e671186ed7ec8fa79fd8d957e8017e4a770713130cfc71f4c5c2bb92bc9-json.log",
+        "LogPath": "/var/snap/docker/common/var-lib-docker/containers/8bd0297e227288b443eeefa7715893820a54a380fd9110bff38fd37ca72003d7/8bd0297e227288b443eeefa7715893820a54a380fd9110bff38fd37ca72003d7-json.log",
         "MountLabel": "",
         "Mounts": [
             {
@@ -2051,10 +2053,10 @@ changed: [192.168.1.65] => {
                 "Destination": "/data",
                 "Driver": "local",
                 "Mode": "",
-                "Name": "da098fd975cdbdcb6a35e5be8aee45a943ec173e5b97f7268bf434286e7d4557",
+                "Name": "0d5af34d16162901113e8c7aea58f929593a5c202d5f20baf702079f48decc94",
                 "Propagation": "",
                 "RW": true,
-                "Source": "/var/snap/docker/common/var-lib-docker/volumes/da098fd975cdbdcb6a35e5be8aee45a943ec173e5b97f7268bf434286e7d4557/_data",
+                "Source": "/var/snap/docker/common/var-lib-docker/volumes/0d5af34d16162901113e8c7aea58f929593a5c202d5f20baf702079f48decc94/_data",
                 "Type": "volume"
             }
         ],
@@ -2076,7 +2078,7 @@ changed: [192.168.1.65] => {
                 "host": {
                     "Aliases": null,
                     "DriverOpts": null,
-                    "EndpointID": "6f48230b5592745081aef8e96eaf8a78de0f08f9139bc1ad977dade53c383dbc",
+                    "EndpointID": "4ad61f1ef070a45fa5b2effcc4d08147eb1a3ad735c3ebb742736b7965e4c6b2",
                     "Gateway": "",
                     "GlobalIPv6Address": "",
                     "GlobalIPv6PrefixLen": 0,
@@ -2090,7 +2092,7 @@ changed: [192.168.1.65] => {
                 }
             },
             "Ports": {},
-            "SandboxID": "a4f0cccf739614844fa1850f6e11a8ef8097b53acdf52efad09b8a8d21a6c412",
+            "SandboxID": "28da76255889dafa2faef100db0f94ab1b8b649f06a1f30729bbdb92cbca8bf2",
             "SandboxKey": "/var/snap/docker/471/run/docker/netns/default",
             "SecondaryIPAddresses": null,
             "SecondaryIPv6Addresses": null
@@ -2098,7 +2100,7 @@ changed: [192.168.1.65] => {
         "Path": "sh",
         "Platform": "linux",
         "ProcessLabel": "",
-        "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/127b0e671186ed7ec8fa79fd8d957e8017e4a770713130cfc71f4c5c2bb92bc9/resolv.conf",
+        "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/8bd0297e227288b443eeefa7715893820a54a380fd9110bff38fd37ca72003d7/resolv.conf",
         "RestartCount": 0,
         "State": {
             "Dead": false,
@@ -2107,10 +2109,10 @@ changed: [192.168.1.65] => {
             "FinishedAt": "0001-01-01T00:00:00Z",
             "OOMKilled": false,
             "Paused": false,
-            "Pid": 104084,
+            "Pid": 123063,
             "Restarting": false,
             "Running": true,
-            "StartedAt": "2020-09-29T20:46:20.810562711Z",
+            "StartedAt": "2020-09-29T22:02:42.186255699Z",
             "Status": "running"
         }
     },
@@ -2234,15 +2236,15 @@ changed: [192.168.1.65] => {
 }
 
 TASK [startup-mlflow] **********************************************************
-task path: /tmp/tmphzdoudez.yml:44
+task path: /tmp/tmp_d3ufvev.yml:44
 <192.168.1.65> ESTABLISH LOCAL CONNECTION FOR USER: shyam
 <192.168.1.65> EXEC /bin/sh -c 'echo ~shyam && sleep 0'
-<192.168.1.65> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/shyam/.ansible/tmp/ansible-tmp-1601412380.9328196-24798315409913 `" && echo ansible-tmp-1601412380.9328196-24798315409913="` echo /home/shyam/.ansible/tmp/ansible-tmp-1601412380.9328196-24798315409913 `" ) && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/shyam/.ansible/tmp/ansible-tmp-1601416962.303956-168539132490873 `" && echo ansible-tmp-1601416962.303956-168539132490873="` echo /home/shyam/.ansible/tmp/ansible-tmp-1601416962.303956-168539132490873 `" ) && sleep 0'
 Using module file /home/shyam/anaconda3/envs/rayflow/lib/python3.7/site-packages/ansible/modules/cloud/docker/docker_container.py
-<192.168.1.65> PUT /home/shyam/.ansible/tmp/ansible-local-103895kcv6h9fy/tmpc35mc3_n TO /home/shyam/.ansible/tmp/ansible-tmp-1601412380.9328196-24798315409913/AnsiballZ_docker_container.py
-<192.168.1.65> EXEC /bin/sh -c 'chmod u+x /home/shyam/.ansible/tmp/ansible-tmp-1601412380.9328196-24798315409913/ /home/shyam/.ansible/tmp/ansible-tmp-1601412380.9328196-24798315409913/AnsiballZ_docker_container.py && sleep 0'
-<192.168.1.65> EXEC /bin/sh -c '~/anaconda3/envs/py37/bin/python /home/shyam/.ansible/tmp/ansible-tmp-1601412380.9328196-24798315409913/AnsiballZ_docker_container.py && sleep 0'
-<192.168.1.65> EXEC /bin/sh -c 'rm -f -r /home/shyam/.ansible/tmp/ansible-tmp-1601412380.9328196-24798315409913/ > /dev/null 2>&1 && sleep 0'
+<192.168.1.65> PUT /home/shyam/.ansible/tmp/ansible-local-1228834o7jt6wv/tmpe219agyk TO /home/shyam/.ansible/tmp/ansible-tmp-1601416962.303956-168539132490873/AnsiballZ_docker_container.py
+<192.168.1.65> EXEC /bin/sh -c 'chmod u+x /home/shyam/.ansible/tmp/ansible-tmp-1601416962.303956-168539132490873/ /home/shyam/.ansible/tmp/ansible-tmp-1601416962.303956-168539132490873/AnsiballZ_docker_container.py && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c '~/anaconda3/envs/py37/bin/python /home/shyam/.ansible/tmp/ansible-tmp-1601416962.303956-168539132490873/AnsiballZ_docker_container.py && sleep 0'
+<192.168.1.65> EXEC /bin/sh -c 'rm -f -r /home/shyam/.ansible/tmp/ansible-tmp-1601416962.303956-168539132490873/ > /dev/null 2>&1 && sleep 0'
 changed: [192.168.1.65] => {
     "ansible_facts": {
         "docker_container": {
@@ -2307,15 +2309,15 @@ changed: [192.168.1.65] => {
                 },
                 "WorkingDir": "/code/rayflow"
             },
-            "Created": "2020-09-29T20:46:21.3840247Z",
+            "Created": "2020-09-29T22:02:42.75998267Z",
             "Driver": "overlay2",
             "ExecIDs": null,
             "GraphDriver": {
                 "Data": {
-                    "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/0de85a2e46accd1cadffa9cae8241eaac5571012abc37ed273fce79f4ecb959b-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/0ea8296862b3c127cc6156a723c25b6529d58840979db5ce64fbf963494a45ce/diff:/var/snap/docker/common/var-lib-docker/overlay2/c901d4a784c5fdb7535aa6d945e5e7402a937c7db948d66754b0e06c851487db/diff:/var/snap/docker/common/var-lib-docker/overlay2/aa854118f278cacd523139140cbdf2b5e50235818cd8da1ead67eb58752c3b84/diff:/var/snap/docker/common/var-lib-docker/overlay2/b873f04c3bbf3e29c432df8c886dbf55c47144e24a906916e4ce22435c73b2eb/diff:/var/snap/docker/common/var-lib-docker/overlay2/a643df34e94f7b8b0ee9d8043bca721a9c69f452060b230b736739edc901a9a7/diff:/var/snap/docker/common/var-lib-docker/overlay2/3de14f602c455b9199737a3edd6be932761ae461dca39d752b96836ac6f8fe54/diff:/var/snap/docker/common/var-lib-docker/overlay2/73f582a47791fb3f4308cc8087bde55a1f7ab10766c10e1541e36af627357596/diff:/var/snap/docker/common/var-lib-docker/overlay2/90f26a1352c84aa3369c4ffbd896e2aed46c9f16b1c7442e246df83d72e3ca08/diff:/var/snap/docker/common/var-lib-docker/overlay2/9a404fa2c31d3a5b3e28533dd38fdae8e3aecc10e26c35e4f0c286f667fb33e4/diff:/var/snap/docker/common/var-lib-docker/overlay2/c3fa5969f8dcf80a90925bafb38b0489334e784ab9847f0c47195c96418ee149/diff:/var/snap/docker/common/var-lib-docker/overlay2/671501ced4e3cd7600d2077dfa7da93bc0ef6f0ea56e20ca8eadaf647cdcae63/diff:/var/snap/docker/common/var-lib-docker/overlay2/6913876d0308cb21682fd1c11bc9abd2679839425a567e7ca145a72decc542cd/diff:/var/snap/docker/common/var-lib-docker/overlay2/9ae59e8810ff3c4a6a7fe8fd8866491b4034c1d5e9a952a9423c1bcb44b4452a/diff:/var/snap/docker/common/var-lib-docker/overlay2/0827230c7706b19690cace52eff431ef99d8dde393c4a19ee1cf1b717a50fc90/diff:/var/snap/docker/common/var-lib-docker/overlay2/3000771d481a1ea441c9e78e665cd5d02d3fe2034ee9f87366bc5a7cae1ac938/diff",
-                    "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/0de85a2e46accd1cadffa9cae8241eaac5571012abc37ed273fce79f4ecb959b/merged",
-                    "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/0de85a2e46accd1cadffa9cae8241eaac5571012abc37ed273fce79f4ecb959b/diff",
-                    "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/0de85a2e46accd1cadffa9cae8241eaac5571012abc37ed273fce79f4ecb959b/work"
+                    "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/dcc49c9423920871e91e7722c23b0d63c8153f1d9e6ce6d7954f513ac097691c-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/0ea8296862b3c127cc6156a723c25b6529d58840979db5ce64fbf963494a45ce/diff:/var/snap/docker/common/var-lib-docker/overlay2/c901d4a784c5fdb7535aa6d945e5e7402a937c7db948d66754b0e06c851487db/diff:/var/snap/docker/common/var-lib-docker/overlay2/aa854118f278cacd523139140cbdf2b5e50235818cd8da1ead67eb58752c3b84/diff:/var/snap/docker/common/var-lib-docker/overlay2/b873f04c3bbf3e29c432df8c886dbf55c47144e24a906916e4ce22435c73b2eb/diff:/var/snap/docker/common/var-lib-docker/overlay2/a643df34e94f7b8b0ee9d8043bca721a9c69f452060b230b736739edc901a9a7/diff:/var/snap/docker/common/var-lib-docker/overlay2/3de14f602c455b9199737a3edd6be932761ae461dca39d752b96836ac6f8fe54/diff:/var/snap/docker/common/var-lib-docker/overlay2/73f582a47791fb3f4308cc8087bde55a1f7ab10766c10e1541e36af627357596/diff:/var/snap/docker/common/var-lib-docker/overlay2/90f26a1352c84aa3369c4ffbd896e2aed46c9f16b1c7442e246df83d72e3ca08/diff:/var/snap/docker/common/var-lib-docker/overlay2/9a404fa2c31d3a5b3e28533dd38fdae8e3aecc10e26c35e4f0c286f667fb33e4/diff:/var/snap/docker/common/var-lib-docker/overlay2/c3fa5969f8dcf80a90925bafb38b0489334e784ab9847f0c47195c96418ee149/diff:/var/snap/docker/common/var-lib-docker/overlay2/671501ced4e3cd7600d2077dfa7da93bc0ef6f0ea56e20ca8eadaf647cdcae63/diff:/var/snap/docker/common/var-lib-docker/overlay2/6913876d0308cb21682fd1c11bc9abd2679839425a567e7ca145a72decc542cd/diff:/var/snap/docker/common/var-lib-docker/overlay2/9ae59e8810ff3c4a6a7fe8fd8866491b4034c1d5e9a952a9423c1bcb44b4452a/diff:/var/snap/docker/common/var-lib-docker/overlay2/0827230c7706b19690cace52eff431ef99d8dde393c4a19ee1cf1b717a50fc90/diff:/var/snap/docker/common/var-lib-docker/overlay2/3000771d481a1ea441c9e78e665cd5d02d3fe2034ee9f87366bc5a7cae1ac938/diff",
+                    "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/dcc49c9423920871e91e7722c23b0d63c8153f1d9e6ce6d7954f513ac097691c/merged",
+                    "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/dcc49c9423920871e91e7722c23b0d63c8153f1d9e6ce6d7954f513ac097691c/diff",
+                    "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/dcc49c9423920871e91e7722c23b0d63c8153f1d9e6ce6d7954f513ac097691c/work"
                 },
                 "Name": "overlay2"
             },
@@ -2422,11 +2424,11 @@ changed: [192.168.1.65] => {
                 "VolumeDriver": "",
                 "VolumesFrom": null
             },
-            "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/f99b6e8cb6ee5fa684f153dd189554c4a32a7530c28738b926de473fd5bfadab/hostname",
-            "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/f99b6e8cb6ee5fa684f153dd189554c4a32a7530c28738b926de473fd5bfadab/hosts",
-            "Id": "f99b6e8cb6ee5fa684f153dd189554c4a32a7530c28738b926de473fd5bfadab",
+            "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/1f3a080216e17a165200cbf0e01ffffd2e02ee60716cac29f3fb700baa06f1b3/hostname",
+            "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/1f3a080216e17a165200cbf0e01ffffd2e02ee60716cac29f3fb700baa06f1b3/hosts",
+            "Id": "1f3a080216e17a165200cbf0e01ffffd2e02ee60716cac29f3fb700baa06f1b3",
             "Image": "sha256:5004635c7a8b0388fbd6d6f802334b00dba26caf98af0f267386f347ee6afcca",
-            "LogPath": "/var/snap/docker/common/var-lib-docker/containers/f99b6e8cb6ee5fa684f153dd189554c4a32a7530c28738b926de473fd5bfadab/f99b6e8cb6ee5fa684f153dd189554c4a32a7530c28738b926de473fd5bfadab-json.log",
+            "LogPath": "/var/snap/docker/common/var-lib-docker/containers/1f3a080216e17a165200cbf0e01ffffd2e02ee60716cac29f3fb700baa06f1b3/1f3a080216e17a165200cbf0e01ffffd2e02ee60716cac29f3fb700baa06f1b3-json.log",
             "MountLabel": "",
             "Mounts": [
                 {
@@ -2456,7 +2458,7 @@ changed: [192.168.1.65] => {
                     "host": {
                         "Aliases": null,
                         "DriverOpts": null,
-                        "EndpointID": "683b1dd6136d752fd924c5a4ed8be1bbcaf074493c0a9781afcac008e3d078ad",
+                        "EndpointID": "2ccfe7e7f6530b318d3867e5683b2a81ef9f1c3fa4a3db2065fcfad9107b6032",
                         "Gateway": "",
                         "GlobalIPv6Address": "",
                         "GlobalIPv6PrefixLen": 0,
@@ -2470,7 +2472,7 @@ changed: [192.168.1.65] => {
                     }
                 },
                 "Ports": {},
-                "SandboxID": "90beade3fe6d191ea90f3b31bb2aad8652d85cc907352f005085c38558c4df7d",
+                "SandboxID": "21c52f2eecd9afa3a737633d2ece3920397b873570552b4cf9e27b0506a3e649",
                 "SandboxKey": "/var/snap/docker/471/run/docker/netns/default",
                 "SecondaryIPAddresses": null,
                 "SecondaryIPv6Addresses": null
@@ -2478,7 +2480,7 @@ changed: [192.168.1.65] => {
             "Path": "mlflow",
             "Platform": "linux",
             "ProcessLabel": "",
-            "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/f99b6e8cb6ee5fa684f153dd189554c4a32a7530c28738b926de473fd5bfadab/resolv.conf",
+            "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/1f3a080216e17a165200cbf0e01ffffd2e02ee60716cac29f3fb700baa06f1b3/resolv.conf",
             "RestartCount": 0,
             "State": {
                 "Dead": false,
@@ -2487,10 +2489,10 @@ changed: [192.168.1.65] => {
                 "FinishedAt": "0001-01-01T00:00:00Z",
                 "OOMKilled": false,
                 "Paused": false,
-                "Pid": 104207,
+                "Pid": 123186,
                 "Restarting": false,
                 "Running": true,
-                "StartedAt": "2020-09-29T20:46:21.569344714Z",
+                "StartedAt": "2020-09-29T22:02:42.932707727Z",
                 "Status": "running"
             }
         }
@@ -2558,15 +2560,15 @@ changed: [192.168.1.65] => {
             },
             "WorkingDir": "/code/rayflow"
         },
-        "Created": "2020-09-29T20:46:21.3840247Z",
+        "Created": "2020-09-29T22:02:42.75998267Z",
         "Driver": "overlay2",
         "ExecIDs": null,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/0de85a2e46accd1cadffa9cae8241eaac5571012abc37ed273fce79f4ecb959b-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/0ea8296862b3c127cc6156a723c25b6529d58840979db5ce64fbf963494a45ce/diff:/var/snap/docker/common/var-lib-docker/overlay2/c901d4a784c5fdb7535aa6d945e5e7402a937c7db948d66754b0e06c851487db/diff:/var/snap/docker/common/var-lib-docker/overlay2/aa854118f278cacd523139140cbdf2b5e50235818cd8da1ead67eb58752c3b84/diff:/var/snap/docker/common/var-lib-docker/overlay2/b873f04c3bbf3e29c432df8c886dbf55c47144e24a906916e4ce22435c73b2eb/diff:/var/snap/docker/common/var-lib-docker/overlay2/a643df34e94f7b8b0ee9d8043bca721a9c69f452060b230b736739edc901a9a7/diff:/var/snap/docker/common/var-lib-docker/overlay2/3de14f602c455b9199737a3edd6be932761ae461dca39d752b96836ac6f8fe54/diff:/var/snap/docker/common/var-lib-docker/overlay2/73f582a47791fb3f4308cc8087bde55a1f7ab10766c10e1541e36af627357596/diff:/var/snap/docker/common/var-lib-docker/overlay2/90f26a1352c84aa3369c4ffbd896e2aed46c9f16b1c7442e246df83d72e3ca08/diff:/var/snap/docker/common/var-lib-docker/overlay2/9a404fa2c31d3a5b3e28533dd38fdae8e3aecc10e26c35e4f0c286f667fb33e4/diff:/var/snap/docker/common/var-lib-docker/overlay2/c3fa5969f8dcf80a90925bafb38b0489334e784ab9847f0c47195c96418ee149/diff:/var/snap/docker/common/var-lib-docker/overlay2/671501ced4e3cd7600d2077dfa7da93bc0ef6f0ea56e20ca8eadaf647cdcae63/diff:/var/snap/docker/common/var-lib-docker/overlay2/6913876d0308cb21682fd1c11bc9abd2679839425a567e7ca145a72decc542cd/diff:/var/snap/docker/common/var-lib-docker/overlay2/9ae59e8810ff3c4a6a7fe8fd8866491b4034c1d5e9a952a9423c1bcb44b4452a/diff:/var/snap/docker/common/var-lib-docker/overlay2/0827230c7706b19690cace52eff431ef99d8dde393c4a19ee1cf1b717a50fc90/diff:/var/snap/docker/common/var-lib-docker/overlay2/3000771d481a1ea441c9e78e665cd5d02d3fe2034ee9f87366bc5a7cae1ac938/diff",
-                "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/0de85a2e46accd1cadffa9cae8241eaac5571012abc37ed273fce79f4ecb959b/merged",
-                "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/0de85a2e46accd1cadffa9cae8241eaac5571012abc37ed273fce79f4ecb959b/diff",
-                "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/0de85a2e46accd1cadffa9cae8241eaac5571012abc37ed273fce79f4ecb959b/work"
+                "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/dcc49c9423920871e91e7722c23b0d63c8153f1d9e6ce6d7954f513ac097691c-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/0ea8296862b3c127cc6156a723c25b6529d58840979db5ce64fbf963494a45ce/diff:/var/snap/docker/common/var-lib-docker/overlay2/c901d4a784c5fdb7535aa6d945e5e7402a937c7db948d66754b0e06c851487db/diff:/var/snap/docker/common/var-lib-docker/overlay2/aa854118f278cacd523139140cbdf2b5e50235818cd8da1ead67eb58752c3b84/diff:/var/snap/docker/common/var-lib-docker/overlay2/b873f04c3bbf3e29c432df8c886dbf55c47144e24a906916e4ce22435c73b2eb/diff:/var/snap/docker/common/var-lib-docker/overlay2/a643df34e94f7b8b0ee9d8043bca721a9c69f452060b230b736739edc901a9a7/diff:/var/snap/docker/common/var-lib-docker/overlay2/3de14f602c455b9199737a3edd6be932761ae461dca39d752b96836ac6f8fe54/diff:/var/snap/docker/common/var-lib-docker/overlay2/73f582a47791fb3f4308cc8087bde55a1f7ab10766c10e1541e36af627357596/diff:/var/snap/docker/common/var-lib-docker/overlay2/90f26a1352c84aa3369c4ffbd896e2aed46c9f16b1c7442e246df83d72e3ca08/diff:/var/snap/docker/common/var-lib-docker/overlay2/9a404fa2c31d3a5b3e28533dd38fdae8e3aecc10e26c35e4f0c286f667fb33e4/diff:/var/snap/docker/common/var-lib-docker/overlay2/c3fa5969f8dcf80a90925bafb38b0489334e784ab9847f0c47195c96418ee149/diff:/var/snap/docker/common/var-lib-docker/overlay2/671501ced4e3cd7600d2077dfa7da93bc0ef6f0ea56e20ca8eadaf647cdcae63/diff:/var/snap/docker/common/var-lib-docker/overlay2/6913876d0308cb21682fd1c11bc9abd2679839425a567e7ca145a72decc542cd/diff:/var/snap/docker/common/var-lib-docker/overlay2/9ae59e8810ff3c4a6a7fe8fd8866491b4034c1d5e9a952a9423c1bcb44b4452a/diff:/var/snap/docker/common/var-lib-docker/overlay2/0827230c7706b19690cace52eff431ef99d8dde393c4a19ee1cf1b717a50fc90/diff:/var/snap/docker/common/var-lib-docker/overlay2/3000771d481a1ea441c9e78e665cd5d02d3fe2034ee9f87366bc5a7cae1ac938/diff",
+                "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/dcc49c9423920871e91e7722c23b0d63c8153f1d9e6ce6d7954f513ac097691c/merged",
+                "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/dcc49c9423920871e91e7722c23b0d63c8153f1d9e6ce6d7954f513ac097691c/diff",
+                "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/dcc49c9423920871e91e7722c23b0d63c8153f1d9e6ce6d7954f513ac097691c/work"
             },
             "Name": "overlay2"
         },
@@ -2673,11 +2675,11 @@ changed: [192.168.1.65] => {
             "VolumeDriver": "",
             "VolumesFrom": null
         },
-        "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/f99b6e8cb6ee5fa684f153dd189554c4a32a7530c28738b926de473fd5bfadab/hostname",
-        "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/f99b6e8cb6ee5fa684f153dd189554c4a32a7530c28738b926de473fd5bfadab/hosts",
-        "Id": "f99b6e8cb6ee5fa684f153dd189554c4a32a7530c28738b926de473fd5bfadab",
+        "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/1f3a080216e17a165200cbf0e01ffffd2e02ee60716cac29f3fb700baa06f1b3/hostname",
+        "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/1f3a080216e17a165200cbf0e01ffffd2e02ee60716cac29f3fb700baa06f1b3/hosts",
+        "Id": "1f3a080216e17a165200cbf0e01ffffd2e02ee60716cac29f3fb700baa06f1b3",
         "Image": "sha256:5004635c7a8b0388fbd6d6f802334b00dba26caf98af0f267386f347ee6afcca",
-        "LogPath": "/var/snap/docker/common/var-lib-docker/containers/f99b6e8cb6ee5fa684f153dd189554c4a32a7530c28738b926de473fd5bfadab/f99b6e8cb6ee5fa684f153dd189554c4a32a7530c28738b926de473fd5bfadab-json.log",
+        "LogPath": "/var/snap/docker/common/var-lib-docker/containers/1f3a080216e17a165200cbf0e01ffffd2e02ee60716cac29f3fb700baa06f1b3/1f3a080216e17a165200cbf0e01ffffd2e02ee60716cac29f3fb700baa06f1b3-json.log",
         "MountLabel": "",
         "Mounts": [
             {
@@ -2707,7 +2709,7 @@ changed: [192.168.1.65] => {
                 "host": {
                     "Aliases": null,
                     "DriverOpts": null,
-                    "EndpointID": "683b1dd6136d752fd924c5a4ed8be1bbcaf074493c0a9781afcac008e3d078ad",
+                    "EndpointID": "2ccfe7e7f6530b318d3867e5683b2a81ef9f1c3fa4a3db2065fcfad9107b6032",
                     "Gateway": "",
                     "GlobalIPv6Address": "",
                     "GlobalIPv6PrefixLen": 0,
@@ -2721,7 +2723,7 @@ changed: [192.168.1.65] => {
                 }
             },
             "Ports": {},
-            "SandboxID": "90beade3fe6d191ea90f3b31bb2aad8652d85cc907352f005085c38558c4df7d",
+            "SandboxID": "21c52f2eecd9afa3a737633d2ece3920397b873570552b4cf9e27b0506a3e649",
             "SandboxKey": "/var/snap/docker/471/run/docker/netns/default",
             "SecondaryIPAddresses": null,
             "SecondaryIPv6Addresses": null
@@ -2729,7 +2731,7 @@ changed: [192.168.1.65] => {
         "Path": "mlflow",
         "Platform": "linux",
         "ProcessLabel": "",
-        "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/f99b6e8cb6ee5fa684f153dd189554c4a32a7530c28738b926de473fd5bfadab/resolv.conf",
+        "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/1f3a080216e17a165200cbf0e01ffffd2e02ee60716cac29f3fb700baa06f1b3/resolv.conf",
         "RestartCount": 0,
         "State": {
             "Dead": false,
@@ -2738,10 +2740,10 @@ changed: [192.168.1.65] => {
             "FinishedAt": "0001-01-01T00:00:00Z",
             "OOMKilled": false,
             "Paused": false,
-            "Pid": 104207,
+            "Pid": 123186,
             "Restarting": false,
             "Running": true,
-            "StartedAt": "2020-09-29T20:46:21.569344714Z",
+            "StartedAt": "2020-09-29T22:02:42.932707727Z",
             "Status": "running"
         }
     },

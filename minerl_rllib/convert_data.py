@@ -9,6 +9,8 @@ from ray.rllib.models.preprocessors import get_preprocessor
 from ray.rllib.offline.json_writer import JsonWriter
 
 from minerl_rllib.envs import register
+from minerl_rllib.envs.wrappers import MineRLObservationWrapper, MineRLActionWrapper
+from tqdm import tqdm
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--data-path', default=os.getenv('MINERL_DATA_ROOT', 'data'))
@@ -24,18 +26,21 @@ def main():
     else:
         save_path = args.save_path
 
-    if args.env is None:
-        env_list = []
-        for env_spec in minerl.herobraine.envs.obfuscated_envs:
-            env_list.append(env_spec.name)
-    else:
-        env_list = [args.env]
+    # if args.env is None:
+    #     env_list = []
+    #     for env_spec in minerl.herobraine.envs.obfuscated_envs:
+    #         env_list.append(env_spec.name)
+    env_list = ["MineRLNavigateDenseVectorObf-v0", "MineRLTreechopVectorObf-v0"]
 
     register()
 
-    for env_name in env_list:
+    env_bar = tqdm(np.arange(len(env_list)))
+    for i in env_bar:
+        env_name = env_list[i]
+        print("Saving env {}".format(env_name))
+        env_bar.set_description("Starting Env: {}".format(env_name))
         env = gym.make(env_name)
-        env = env.MineRLObservationWrapper(env.MineRLActionWrapper(env))
+        env = MineRLObservationWrapper(MineRLActionWrapper(env))
 
         batch_builder = SampleBatchBuilder()
         writer = JsonWriter(os.path.join(save_path, env_name))
@@ -45,7 +50,10 @@ def main():
 
         data = minerl.data.make(env_name, data_dir=args.data_path)
 
-        for trajectory_name in data.get_trajectory_names():
+        trajectory_names = list(data.get_trajectory_names())
+        bar = tqdm(np.arange(len(trajectory_names)))
+        for j in bar:
+            trajectory_name = trajectory_names[j]
             t = 0
             prev_action = None
             prev_reward = 0
@@ -76,6 +84,8 @@ def main():
                 prev_reward = reward
                 t += 1
             writer.write(batch_builder.build_and_reset())
+            bar.set_description("Finished trajectory: {}".format(trajectory_name))
+        env_bar.set_description("Finished env {}".format(env_name))
 
 
 if __name__ == '__main__':

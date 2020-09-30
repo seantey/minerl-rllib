@@ -5,8 +5,7 @@ import minerl
 from ray.tune.registry import register_env
 
 from minerl_rllib.envs.env import MineRLRandomDebugEnv, LazyMineRLEnv
-from minerl_rllib.envs.wrappers import wrap, gym_wrap
-from gym.envs.registration import register
+from minerl_rllib.envs.wrappers import wrap
 
 
 def register():
@@ -27,7 +26,7 @@ def register():
             return wrap(LazyMineRLEnv(**env_kwargs), **env_config)
 
         register_env(env_spec.name, env_creator)
-        
+
     def env_creator(env_config):
         return wrap(MineRLRandomDebugEnv(), **env_config)
 
